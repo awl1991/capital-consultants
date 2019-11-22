@@ -50,7 +50,7 @@
 			));
 			background-image:		url('../../images/blueprint.png');
 			background-position:	top right;
-			background-size:		300px;
+			background-size:		200px;
 			background-repeat:		repeat;
 			z-index: 2;
 		}
@@ -66,8 +66,8 @@
 
 		.body.is-article-visible & {
 			&:after {
-				@include vendor('transform', 'scale(1.0825)');
-				@include vendor('filter', 'blur(0.2rem)');
+				@include vendor('transform', 'scale(1.3)');
+				@include vendor('filter', 'blur(0.1rem)');
 			}
 		}
 
@@ -79,7 +79,7 @@
 	}
 
 	#bgtoverlay {
-	position: fixed;
+		position: fixed;
 		bottom: 0;
 		right: 0;
 		width: 100%;
@@ -87,20 +87,63 @@
 		opacity: 1;
 		background-color:rgba(7, 11, 12, 0.938);
 		z-index: 2;
-}
-
+	}
 	#bgtop {
-		@include vendor('transform', 'scale(1)');
+		@include vendor('transform', 'scale(1.0)');
+		-webkit-backface-visibility: hidden;
 		position: fixed;
 		bottom: 0;
 		right: 0;
 		width: 100%;
 		height: 100vh;
 		opacity: 1;
-		background-image:		url('../../images/bg.png');
-		background-position:	bottom center;
-		background-size:		1000px 800px;
-		background-repeat:		repeat;
 		z-index: 1;
-		@include vendor('filter', 'blur(0.01rem)');
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		&:after {
+			@include vendor('transform', 'scale(1)');
+			@include vendor('transition', (
+				'transform #{_duration(article)} ease-in-out',
+				'filter #{_duration(article)} ease-in-out'
+			));
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100vh;
+			opacity: 1;
+			background-image:		url('../../images/bg.png');
+			background-position:	bottom center;
+			background-size:		1000px 800px;
+			background-repeat:		repeat;
+			z-index: 1;
+		}
+		&:after {
+			@include vendor('transform', 'scale(1.2)');
+			@include vendor('transition', (
+				'transform #{_duration(article)} ease-in-out',
+				'filter #{_duration(article)} ease-in-out'
+			));
+		}
+
+
+		.body.is-article-visible & {
+			&:after {
+				@include vendor('transform', 'scale(1)');
+				@include vendor('filter', 'blur(0.01rem)');
+			}
+		}
+
+		.body.is-loading & {
+			&:before {
+				background-color:rgb(43, 63, 71);
+			}
+		}
 	}

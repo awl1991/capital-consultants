@@ -13,7 +13,7 @@ class IndexPage extends React.Component {
       timeout: false,
       articleTimeout: false,
       article: "",
-      loading: "is-loading",
+      loading: "is-loading"
     }
     this.handleOpenArticle = this.handleOpenArticle.bind(this)
     this.handleCloseArticle = this.handleCloseArticle.bind(this)
@@ -42,37 +42,37 @@ class IndexPage extends React.Component {
   handleOpenArticle(article) {
     this.setState({
       isArticleVisible: !this.state.isArticleVisible,
-      article,
+      article
     })
 
     setTimeout(() => {
       this.setState({
-        timeout: !this.state.timeout,
+        timeout: !this.state.timeout
       })
     }, 325)
 
     setTimeout(() => {
       this.setState({
-        articleTimeout: !this.state.articleTimeout,
+        articleTimeout: !this.state.articleTimeout
       })
     }, 350)
   }
 
   handleCloseArticle() {
     this.setState({
-      articleTimeout: !this.state.articleTimeout,
+      articleTimeout: !this.state.articleTimeout
     })
 
     setTimeout(() => {
       this.setState({
-        timeout: !this.state.timeout,
+        timeout: !this.state.timeout
       })
     }, 325)
 
     setTimeout(() => {
       this.setState({
         isArticleVisible: !this.state.isArticleVisible,
-        article: "",
+        article: ""
       })
     }, 350)
   }
@@ -109,9 +109,8 @@ class IndexPage extends React.Component {
             <Footer timeout={this.state.timeout} />
           </div>
           <div id="bg"></div>
-          <div id="bgtop">
-            <div id="bgtoverlay"></div>
-          </div>
+          <div id="bgtop"></div>
+          <div id="bgtoverlay"></div>
         </div>
       </Layout>
     )

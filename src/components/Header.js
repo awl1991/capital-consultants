@@ -12,9 +12,8 @@ const Header = props => (
           right: 0,
           marginLeft: "auto",
           marginRight: "auto",
-          width: "100%",
-          top: "-27px",
-          opacity: ".5"
+          height: "100%",
+          opacity: ".6"
         }}
         src={shadowLogo}
         alt="Capital Consultants"
