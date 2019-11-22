@@ -2,22 +2,20 @@ import React from "react"
 import PropTypes from "prop-types"
 import shadowLogo from "../images/logo_w_shadow.png"
 
+const logoStyle = {
+  position: "absolute",
+  left: 0,
+  right: 0,
+  marginLeft: "auto",
+  marginRight: "auto",
+  height: "100%",
+  opacity: ".6"
+}
+
 const Header = props => (
   <header id="header" style={props.timeout ? { display: "none" } : {}}>
     <div className="logo">
-      <img
-        style={{
-          position: "absolute",
-          left: 0,
-          right: 0,
-          marginLeft: "auto",
-          marginRight: "auto",
-          height: "100%",
-          opacity: ".6"
-        }}
-        src={shadowLogo}
-        alt="Capital Consultants"
-      />
+      <img style={logoStyle} src={shadowLogo} alt="Capital Consultants" />
     </div>
     <div className="content">
       <div className="inner">
