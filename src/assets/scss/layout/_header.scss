@@ -227,7 +227,7 @@
 			nav {
 				ul {
 					@include vendor('flex-direction', 'column');
-					min-width: 10rem;
+					min-width: 12rem;
 					max-width: 100%;
 
 					li {
