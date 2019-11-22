@@ -216,14 +216,18 @@
 		}
 
 		@include breakpoint(xsmall) {
-			padding: 1.5rem 0;
-
+			.logo {
+				width: 8rem;
+				height: 7.2rem;
+				line-height: 4.75rem;
+			}
 			.content {
 				.inner {
-					padding: 4rem 0;
+					padding: 3.5rem 0;
 
 					h1 {
-						font-size: 3rem;
+						letter-spacing: _font(letter-spacing);
+						font-size: 1.5rem;
 					}
 				}
 			}
@@ -231,7 +235,7 @@
 			nav {
 				ul {
 					@include vendor('flex-direction', 'column');
-					min-width: 12rem;
+					min-width: 18rem;
 					max-width: 100%;
 
 					li {
@@ -245,7 +249,7 @@
 						a {
 							height: 3rem;
 							line-height: 3rem;
-							min-width: 0;
+							min-width: 100%;
 							width: 100%;
 						}
 					}
