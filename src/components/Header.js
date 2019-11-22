@@ -33,10 +33,10 @@ const Header = props => (
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle("intro")
+              props.onOpenArticle("about")
             }}
           >
-            Intro
+            About
           </a>
         </li>
         <li>
@@ -53,10 +53,10 @@ const Header = props => (
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle("about")
+              props.onOpenArticle("intro")
             }}
           >
-            About
+            Intro
           </a>
         </li>
         <li>

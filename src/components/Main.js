@@ -22,35 +22,32 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: "flex" } : { display: "none" }}
       >
         <article
-          id="intro"
-          className={`${this.props.article === "intro" ? "active" : ""} ${
+          id="about"
+          className={`${this.props.article === "about" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
           style={{ display: "none" }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">About</h2>
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            Complex insurance claims require a multitude of expert consultants
+            such as engineers, architects, experienced estimators, insurance
+            policy experts, CPA’s and claims management professionals. The
+            insurance company has all of these experts in place prior to the
+            event of your loss, however, these experts maintain reletionships
+            with carriers which generally leads to a preference to the carriers
+            interests. {/*<a href="#work">awesome work</a>*/}
           </p>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            It is to your benefit to retain your own firm to manage this process
+            on your behalf to allocate the proper experts to pursue your
+            interests and to achieve the greatest outcome of claim satisfaction.
+            Claim satisfaction may not always be specific to financial outcome,
+            but an expeditious, accurate closure to avoid business or personal
+            interruption.
           </p>
           {close}
         </article>
@@ -85,8 +82,8 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="about"
-          className={`${this.props.article === "about" ? "active" : ""} ${
+          id="intro"
+          className={`${this.props.article === "intro" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
           style={{ display: "none" }}
@@ -178,7 +175,7 @@ Main.propTypes = {
   articleTimeout: PropTypes.bool,
   onCloseArticle: PropTypes.func,
   timeout: PropTypes.bool,
-  setWrapperRef: PropTypes.func.isRequired,
+  setWrapperRef: PropTypes.func.isRequired
 }
 
 export default Main
