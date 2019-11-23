@@ -3,7 +3,7 @@
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
-
+$ipad: "all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)";
 /* Footer */
 
 	#footer {
@@ -27,7 +27,7 @@
 			@include breakpoint(xsmall) {
 				font-size: .5rem;
 			}
-			@include breakpoint(ipad) {
+			@media #{$ipad} {
 				font-size: .6rem;
 				margin-bottom: 0px;
 			}
