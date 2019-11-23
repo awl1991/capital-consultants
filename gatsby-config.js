@@ -8,8 +8,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "gatsby-starter-default",
-        short_name: "starter",
+        name: "capital-consultants",
+        short_name: "capcon",
         start_url: "/",
         background_color: "#546E7A",
         theme_color: "#546E7A",

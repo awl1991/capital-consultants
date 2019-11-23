@@ -3,6 +3,7 @@
 @import 'libs/mixins';
 @import 'libs/skel';
 @import '../css/font-awesome.min.css';
+$ipad: "all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)";
 @import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Raleway&display=swap');
 	@include skel-breakpoints((
 		xlarge:		'(max-width: 1680px)',
@@ -11,7 +12,6 @@
 		small:		'(max-width: 736px)',
 		xsmall:		'(max-width: 480px)',
 		xxsmall:	'(max-width: 360px)',
-		ipad:		'((min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)'
 	));
 
 	@include skel-layout((
