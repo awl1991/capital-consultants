@@ -25,6 +25,14 @@
 			text-transform: uppercase;
 			color: _palette(fg-sub);
 		}
+		@include breakpoint(xsmall) {
+			.copyright {
+				p {
+					font-size: .3rem;
+				}
+			}
+		}
+
 
 		.body.is-article-visible & {
 			@include vendor('transform', 'scale(0.95)');
