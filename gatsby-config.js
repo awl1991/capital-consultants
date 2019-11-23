@@ -2,36 +2,20 @@ module.exports = {
   siteMetadata: {
     title: "Capital Consultants",
     author: "Andrew Labunski",
-    description: "Large Loss Consulting Agency"
+    description: "Large Loss Consulting Agency",
+    icon: ""
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-favicon`,
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        logo: "./src/images/logo.png",
-        // WebApp Manifest Configuration
-        appName: null, // Inferred with your package.json
-        appDescription: null,
-        developerName: null,
-        developerURL: null,
-        dir: "auto",
-        lang: "en-US",
-        background: "",
+        name: "gatsby-starter-default",
+        short_name: "starter",
+        start_url: "/",
+        background_color: "",
         theme_color: "",
-        display: "standalone",
-        orientation: "any",
-        start_url: "/?homescreen=1",
-        version: "1.0",
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          yandex: false,
-          windows: false
-        }
+        display: "minimal-ui",
+        icon: "src/images/logo.png" // This path is relative to the root of the site.
       }
     },
     "gatsby-plugin-sass",
