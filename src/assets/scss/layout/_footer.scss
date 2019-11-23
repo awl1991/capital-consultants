@@ -25,12 +25,12 @@
 			text-transform: uppercase;
 			color: _palette(fg-sub);
 		}
-		@include breakpoint(xsmall) {
-			.copyright {
-				p {
-					font-size: .3rem;
+		.copyright {
+			@include breakpoint(xsmall) {
+					p {
+						font-size: .3rem;
+					}
 				}
-			}
 		}
 
 
