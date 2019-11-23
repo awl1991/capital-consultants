@@ -11,6 +11,7 @@
 		small:		'(max-width: 736px)',
 		xsmall:		'(max-width: 480px)',
 		xxsmall:	'(max-width: 360px)'
+		ipad:		'all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)'
 	));
 
 	@include skel-layout((
