@@ -4,14 +4,15 @@ import bwlogo from "../images/bw_logo_small.png"
 
 const bwlogoStyle = {
   height: ".5rem",
-  opacity: ".7"
+  opacity: ".65",
+  marginRight: "3px"
 }
 
 const Footer = props => (
   <footer id="footer" style={props.timeout ? { display: "none" } : {}}>
     <p className="copyright">
-      <img style={bwlogoStyle} src={bwlogo} alt="·" /> │&copy; Capital
-      Consultants L.L.C.
+      <img style={bwlogoStyle} src={bwlogo} alt="·" />
+      │&copy; Capital Consultants L.L.C.
     </p>
   </footer>
 )
