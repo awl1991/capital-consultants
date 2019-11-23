@@ -1,9 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
+import bwlogo from "../images/bw_logo_small.png"
+
+const bwlogoStyle = {
+  height: ".5rem",
+  opacity: ".7"
+}
 
 const Footer = props => (
   <footer id="footer" style={props.timeout ? { display: "none" } : {}}>
-    <p className="copyright">&copy; │ Capital Consultants L.L.C.</p>
+    <p className="copyright">
+      <img style={bwlogoStyle} src={bwlogo} alt="·" /> │&copy; Capital
+      Consultants L.L.C.
+    </p>
   </footer>
 )
 
