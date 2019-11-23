@@ -28,7 +28,7 @@ class Main extends React.Component {
           }`}
           style={{ display: "none" }}
         >
-          <h2 className="major">About</h2>
+          <h3 className="major">About</h3>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
@@ -57,9 +57,9 @@ class Main extends React.Component {
           className={`${this.props.article === "work" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: "none", backgroundColor: "" }}
+          style={{ display: "none" }}
         >
-          <h2 className="major">Work</h2>
+          <h3 className="major">Work</h3>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
@@ -88,7 +88,7 @@ class Main extends React.Component {
           }`}
           style={{ display: "none" }}
         >
-          <h2 className="major">About</h2>
+          <h3 className="major">About</h3>
           <span className="image main">
             <img src={pic03} alt="" />
           </span>
@@ -111,7 +111,7 @@ class Main extends React.Component {
           }`}
           style={{ display: "none" }}
         >
-          <h2 className="major">Contact</h2>
+          <h3 className="major">Contact</h3>
           <form method="post" action="#">
             <div className="field half first">
               <label htmlFor="name">Name</label>
