@@ -144,7 +144,10 @@ class Main extends React.Component {
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
+              <a
+                href="https://www.facebook.com/thecapitalconsultants/"
+                className="icon fa-facebook"
+              >
                 <span className="label">Facebook</span>
               </a>
             </li>
