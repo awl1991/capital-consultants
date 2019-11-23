@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
-import pic01 from "../images/pic01.jpg"
-import pic02 from "../images/pic02.jpg"
+//import pic01 from "../images/pic01.jpg"
+import pic02 from "../images/pic02.png"
 import pic03 from "../images/pic03.jpg"
 
 class Main extends React.Component {
@@ -30,7 +30,7 @@ class Main extends React.Component {
         >
           <h2 className="major">About</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src={pic02} alt="" />
           </span>
           <p>
             Complex insurance claims require a multitude of expert consultants
@@ -57,7 +57,7 @@ class Main extends React.Component {
           className={`${this.props.article === "work" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: "none" }}
+          style={{ display: "none", backgroundColor: "" }}
         >
           <h2 className="major">Work</h2>
           <span className="image main">
