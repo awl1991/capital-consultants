@@ -48,6 +48,8 @@
 		}
 
 		@include breakpoint(xsmall) {
+			$gutter: _size(element-margin);
+			margin: 0 0 (_size(element-margin)) 0;
 			.field {
 				&.half {
 					width: 100%;
