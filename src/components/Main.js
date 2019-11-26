@@ -8,8 +8,17 @@ import pic03 from "../images/pic03.jpg"
 class Main extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {}
+    this.state = {
+      name: "",
+      email: "",
+      message: ""
+    }
   }
+
+  handleChange(e) {
+    this.setState({ ...this.state, [e.target.name]: e.target.value })
+  }
+
   render() {
     let close = (
       <div
@@ -19,12 +28,6 @@ class Main extends React.Component {
         }}
       ></div>
     )
-
-    const [state, setState] = this.state
-
-    const handleChange = e => {
-      setState({ ...state, [e.target.name]: e.target.value })
-    }
 
     function encode(data) {
       return Object.keys(data)
@@ -42,7 +45,7 @@ class Main extends React.Component {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
           "form-name": form.getAttribute("name"),
-          ...state
+          ...this.state
         })
       })
         .then(() => navigate(form.getAttribute("action")))
@@ -156,23 +159,30 @@ class Main extends React.Component {
             <div className="field half first">
               <label htmlFor="name">Name</label>
               <input
+                value={this.state.name}
                 type="hidden"
                 name="name"
                 id="name"
-                onChange={handleChange}
+                onChange={this.handleChange}
               />
             </div>
             <div className="field half">
               <label htmlFor="email">Email</label>
-              <input name="email" id="email" onChange={handleChange} />
+              <input
+                value={this.state.email}
+                name="email"
+                id="email"
+                onChange={this.handleChange}
+              />
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
               <textarea
+                value={this.state.message}
                 name="message"
                 id="message"
                 rows="4"
-                onChange={handleChange}
+                onChange={this.handleChange}
               ></textarea>
             </div>
             <ul className="actions">
