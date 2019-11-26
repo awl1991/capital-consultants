@@ -105,6 +105,7 @@ class Main extends React.Component {
         </article>
 
         <article
+          name="contact"
           id="contact"
           className={`${this.props.article === "contact" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
