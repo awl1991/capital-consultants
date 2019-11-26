@@ -2,7 +2,7 @@ import React from "react"
 
 export default () => (
   <div>
-    <h1>Thank you!</h1>
-    <p>This is a thank you</p>
+    <h1>Thank you! Page</h1>
+    <p>This</p>
   </div>
 )
