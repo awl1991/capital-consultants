@@ -14,32 +14,32 @@ class Main extends React.Component {
       message: ""
     }
   }
-  componentDidMount() {
-    this.handleChange = this.handleChange.bind(this)
-  }
-
-  handleSubmit(e) {
-    e.preventDefault()
-    const form = e.target
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: this.encode({
-        "contact": form.getAttribute("name"),
-        ...this.state
-      })
-    })
-      .then(() => navigate(form.getAttribute("action")))
-      .catch(error => alert(error))
-  }
-
-  encode(data) {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&")
-  }
 
   render() {
+    const encode = data => {
+      return Object.keys(data)
+        .map(
+          key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+        )
+        .join("&")
+    }
+    const handleSubmit = e => {
+      e.preventDefault()
+      const form = e.target
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": form.getAttribute("name"),
+          ...this.state
+        })
+      })
+        .then(() => navigate(form.getAttribute("action")))
+        .catch(error => alert(error))
+    }
+    const handleChange = e => {
+      this.setState({ ...this.state, [e.target.name]: e.target.value })
+    }
     let close = (
       <div
         className="close"
@@ -48,13 +48,6 @@ class Main extends React.Component {
         }}
       ></div>
     )
-    const handleChange = () => {
-      const name = this.target.name
-
-      this.setState({
-        [name]: this.target.value
-      })
-    }
     return (
       <div
         ref={this.props.setWrapperRef}
@@ -112,11 +105,10 @@ class Main extends React.Component {
           <p>
             Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
             libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condiment sem. In efficitur ligula tate urna.
-            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-            Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
-            tempus.
+            Pellentesque condiment sem. In efficitur ligula tate urna. Maecenas
+            laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et
+            orci eu lorem consequat tincidunt. Vivamus et sagittis libero.
+            Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.
           </p>
           {close}
         </article>
@@ -156,10 +148,11 @@ class Main extends React.Component {
           <form
             name="contact"
             method="post"
-            onSubmit={this.handleSubmit}
+            onSubmit={handleSubmit}
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <div type="hidden" className="field half first">
               <label htmlFor="name">Name</label>
               <input
