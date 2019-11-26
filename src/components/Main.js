@@ -139,6 +139,7 @@ const Main = props => {
         <form
           name="contact"
           method="post"
+          action="/thanks/"
           onSubmit={handleSubmit}
           data-netlify="true"
           data-netlify-honeypot="bot-field"
