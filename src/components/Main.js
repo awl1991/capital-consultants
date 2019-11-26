@@ -19,6 +19,26 @@ class Main extends React.Component {
   handleChange(evt) {
     this.setState({ [evt.target.name]: evt.target.value })
   }
+  handleSubmit(e) {
+    e.preventDefault()
+    const form = e.target
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: this.encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state
+      })
+    })
+      .then(() => navigate(form.getAttribute("action")))
+      .catch(error => alert(error))
+  }
+
+  encode(data) {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&")
+  }
 
   render() {
     let close = (
@@ -29,29 +49,6 @@ class Main extends React.Component {
         }}
       ></div>
     )
-
-    function encode(data) {
-      return Object.keys(data)
-        .map(
-          key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-        )
-        .join("&")
-    }
-
-    const handleSubmit = e => {
-      e.preventDefault()
-      const form = e.target
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({
-          "form-name": form.getAttribute("name"),
-          ...this.state
-        })
-      })
-        .then(() => navigate(form.getAttribute("action")))
-        .catch(error => alert(error))
-    }
 
     return (
       <div
@@ -154,7 +151,7 @@ class Main extends React.Component {
           <form
             name="contact"
             method="post"
-            onSubmit={handleSubmit}
+            onSubmit={this.handleSubmit}
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
