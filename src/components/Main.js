@@ -117,6 +117,7 @@ class Main extends React.Component {
             method="post"
             netlify-honeypot="bot-field"
             data-netlify="true"
+            action="#"
           >
             <div className="field half first">
               <label htmlFor="name">Name</label>
