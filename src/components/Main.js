@@ -1,9 +1,9 @@
 import PropTypes from "prop-types"
 import React from "react"
 import { navigate } from "gatsby-link"
-//import pic01 from "../images/pic01.jpg"
 import pic02 from "../images/pic02.png"
 import pic03 from "../images/pic03.jpg"
+//import pic01 from "../images/pic01.jpg"
 
 function encode(data) {
   return Object.keys(data)
