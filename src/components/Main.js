@@ -45,7 +45,7 @@ class Main extends React.Component {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
-          contact: form.getAttribute("name"),
+          "form-name": form.getAttribute("name"),
           ...this.state
         })
       })
