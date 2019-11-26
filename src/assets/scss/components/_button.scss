@@ -53,9 +53,10 @@
 		}
 
 		&.special {
-			background-color: _palette(fg-bold);
+			background-color: _palette(fg);
 			color: _palette(bg) !important;
 			font-weight: _font(weight-bold);
+			opacity: .8;
 
 			&:hover {
 			}

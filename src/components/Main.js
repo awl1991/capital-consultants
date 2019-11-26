@@ -21,6 +21,7 @@ class Main extends React.Component {
         id="main"
         style={this.props.timeout ? { display: "flex" } : { display: "none" }}
       >
+        <div id="topBorder"></div>
         <article
           id="about"
           className={`${this.props.article === "about" ? "active" : ""} ${
@@ -35,15 +36,14 @@ class Main extends React.Component {
           <p>
             Complex insurance claims require a multitude of expert consultants
             such as engineers, architects, experienced estimators, insurance
-            policy experts, CPA’s and claims management professionals. The
-            insurance company has all of these experts in place prior to the
-            event of your loss, however, these experts maintain reletionships
-            with carriers which generally leads to a preference to the carriers
-            interests. {/*<a href="#work">awesome work</a>*/}
+            policy experts, CPA’s and claims management professionals. Your
+            insurance carrier has all of these experts in place prior to the
+            event of your loss in order to protect their interests.{" "}
+            {/*<a href="#work">awesome work</a>*/}
           </p>
           <p>
             It is to your benefit to retain your own firm to manage this process
-            on your behalf to allocate the proper experts to pursue your
+            on your behalf to allocate the proper experts to pursue your own
             interests and to achieve the greatest outcome of claim satisfaction.
             Claim satisfaction may not always be specific to financial outcome,
             but an expeditious, accurate closure to avoid business or personal
@@ -123,7 +123,7 @@ class Main extends React.Component {
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
+              <textarea name="message" id="message" rows="6"></textarea>
             </div>
             <ul className="actions">
               <li>
@@ -167,6 +167,7 @@ class Main extends React.Component {
           </ul>
           {close}
         </article>
+        <div id="bottomBorder"></div>
       </div>
     )
   }
