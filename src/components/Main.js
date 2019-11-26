@@ -13,10 +13,11 @@ class Main extends React.Component {
       email: "",
       message: ""
     }
+    this.handleChange = this.handleChange.bind(this)
   }
 
-  handleChange(event) {
-    this.setState({ value: event.target.value })
+  handleChange(evt) {
+    this.setState({ [evt.target.name]: evt.target.value })
   }
 
   render() {
