@@ -25,7 +25,7 @@ class Main extends React.Component {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: this.encode({
-        "form-name": form.getAttribute("name"),
+        "contact": form.getAttribute("name"),
         ...this.state
       })
     })
@@ -112,7 +112,7 @@ class Main extends React.Component {
           <p>
             Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
             libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-            Pellentesque condimentum sem. In efficitur ligula tate urna.
+            Pellentesque condiment sem. In efficitur ligula tate urna.
             Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
             Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
             libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat
