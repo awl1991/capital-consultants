@@ -1,8 +1,8 @@
 import PropTypes from "prop-types"
 import React from "react"
+//import pic01 from "../images/pic01.jpg"
 import pic02 from "../images/pic02.png"
 import pic03 from "../images/pic03.jpg"
-import action from "../assets/post"
 
 class Main extends React.Component {
   render() {
@@ -112,13 +112,8 @@ class Main extends React.Component {
           style={{ display: "none" }}
         >
           <h3 className="major">Contact</h3>
-          <form
-            action={action}
-            name="contact"
-            method="POST"
-            data-netlify="true"
-          >
-            <div aclassName="field half first">
+          <form name="contact" method="POST" data-netlify="true">
+            <div className="field half first">
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
             </div>

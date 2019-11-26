@@ -1,3 +1,5 @@
+import jquery from "jquery"
+const $ = jquery
 $("#contact").submit(function(e) {
   e.preventDefault()
   var $form = $(this)
