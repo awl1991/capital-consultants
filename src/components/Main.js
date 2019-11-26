@@ -114,9 +114,8 @@ class Main extends React.Component {
           <h3 className="major">Contact</h3>
           <form
             subject={"New Form Submission"}
-            method="post"
+            method="POST"
             data-netlify="true"
-            action="#"
           >
             <div className="field half first">
               <label htmlFor="name">Name</label>
