@@ -44,7 +44,7 @@ class Main extends React.Component {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
-          "form-name": form.getAttribute("name"),
+          contact: form.getAttribute("name"),
           ...this.state
         })
       })
@@ -151,16 +151,17 @@ class Main extends React.Component {
         >
           <h3 className="major">Contact</h3>
           <form
+            name="contact"
             method="post"
             onSubmit={handleSubmit}
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
-            <div className="field half first">
+            <div type="hidden" className="field half first">
               <label htmlFor="name">Name</label>
               <input
                 value={this.state.name}
-                type="hidden"
+                type="text"
                 name="name"
                 id="name"
                 onChange={this.handleChange}
@@ -170,6 +171,7 @@ class Main extends React.Component {
               <label htmlFor="email">Email</label>
               <input
                 value={this.state.email}
+                type="text"
                 name="email"
                 id="email"
                 onChange={this.handleChange}
