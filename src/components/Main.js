@@ -112,18 +112,38 @@ class Main extends React.Component {
           style={{ display: "none" }}
         >
           <h3 className="major">Contact</h3>
-          <form name="contact" method="POST" data-netlify="true">
+          <form
+            subject={"andrew@thecapitalconsultants.com"}
+            method="post"
+            netlify-honeypot="bot-field"
+            data-netlify="true"
+          >
             <div className="field half first">
               <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
+              <input
+                netlify-honeypot="bot-field"
+                type="text"
+                name="name"
+                id="name"
+              />
             </div>
             <div className="field half">
               <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
+              <input
+                netlify-honeypot="bot-field"
+                type="text"
+                name="email"
+                id="email"
+              />
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="6"></textarea>
+              <textarea
+                netlify-honeypot="bot-field"
+                name="message"
+                id="message"
+                rows="6"
+              ></textarea>
             </div>
             <ul className="actions">
               <li>
