@@ -13,12 +13,11 @@ class Main extends React.Component {
       email: "",
       message: ""
     }
+  }
+  componentDidMount() {
     this.handleChange = this.handleChange.bind(this)
   }
 
-  handleChange(evt) {
-    this.setState({ [evt.target.name]: evt.target.value })
-  }
   handleSubmit(e) {
     e.preventDefault()
     const form = e.target
@@ -49,7 +48,13 @@ class Main extends React.Component {
         }}
       ></div>
     )
+    const handleChange = () => {
+      const name = this.target.name
 
+      this.setState({
+        [name]: this.target.value
+      })
+    }
     return (
       <div
         ref={this.props.setWrapperRef}
@@ -162,7 +167,7 @@ class Main extends React.Component {
                 type="text"
                 name="name"
                 id="name"
-                onChange={this.handleChange}
+                onChange={handleChange}
               />
             </div>
             <div className="field half">
@@ -172,7 +177,7 @@ class Main extends React.Component {
                 type="text"
                 name="email"
                 id="email"
-                onChange={this.handleChange}
+                onChange={handleChange}
               />
             </div>
             <div className="field">
@@ -182,12 +187,17 @@ class Main extends React.Component {
                 name="message"
                 id="message"
                 rows="4"
-                onChange={this.handleChange}
+                onChange={handleChange}
               ></textarea>
             </div>
             <ul className="actions">
               <li>
-                <input type="submit" value="Send Message" className="special" />
+                <input
+                  onClick={alert(JSON.stringify(this.state))}
+                  type="submit"
+                  value="Send Message"
+                  className="special"
+                />
               </li>
               <li>
                 <input type="reset" value="Reset" />
