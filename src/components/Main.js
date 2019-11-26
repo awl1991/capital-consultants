@@ -20,7 +20,7 @@ class Main extends React.Component {
       ></div>
     )
 
-    const [state, setState] = React.useState({})
+    const [state, setState] = this.state
 
     const handleChange = e => {
       setState({ ...state, [e.target.name]: e.target.value })
