@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
+import { navigate } from "gatsby-link"
 //import pic01 from "../images/pic01.jpg"
 import pic02 from "../images/pic02.png"
 import pic03 from "../images/pic03.jpg"
@@ -14,6 +15,35 @@ class Main extends React.Component {
         }}
       ></div>
     )
+
+    const [state, setState] = React.useState({})
+
+    const handleChange = e => {
+      setState({ ...state, [e.target.name]: e.target.value })
+    }
+
+    function encode(data) {
+      return Object.keys(data)
+        .map(
+          key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+        )
+        .join("&")
+    }
+
+    const handleSubmit = e => {
+      e.preventDefault()
+      const form = e.target
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": form.getAttribute("name"),
+          ...state
+        })
+      })
+        .then(() => navigate(form.getAttribute("action")))
+        .catch(error => alert(error))
+    }
 
     return (
       <div
@@ -115,24 +145,30 @@ class Main extends React.Component {
           <h3 className="major">Contact</h3>
           <form
             method="post"
+            onSubmit={handleSubmit}
             data-netlify="true"
             data-netlify-honeypot="bot-field"
           >
             <div className="field half first">
               <label htmlFor="name">Name</label>
-              <input type="hidden" name="name" id="name" />
+              <input
+                type="hidden"
+                name="name"
+                id="name"
+                onChange={handleChange}
+              />
             </div>
             <div className="field half">
               <label htmlFor="email">Email</label>
-              <input type="hidden" name="email" id="email" />
+              <input name="email" id="email" onChange={handleChange} />
             </div>
             <div className="field">
               <label htmlFor="message">Message</label>
               <textarea
-                type="hidden"
                 name="message"
                 id="message"
-                rows="6"
+                rows="4"
+                onChange={handleChange}
               ></textarea>
             </div>
             <ul className="actions">
