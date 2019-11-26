@@ -15,8 +15,8 @@ class Main extends React.Component {
     }
   }
 
-  handleChange(e) {
-    this.setState({ ...this.state, [e.target.name]: e.target.value })
+  handleChange(event) {
+    this.setState({ value: event.target.value })
   }
 
   render() {
