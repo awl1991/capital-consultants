@@ -109,9 +109,8 @@ const Main = props => {
       >
         <h3 className="major">Contact</h3>
         <form
-          name="contact"
+          name="contact-form"
           method="post"
-          encType="application/x-www-form-urlencoded"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
