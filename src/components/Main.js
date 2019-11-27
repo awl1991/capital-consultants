@@ -129,7 +129,7 @@ const Main = props => {
           </div>
           <ul className="actions">
             <li>
-              <button className="special">Send Message</button>{" "}
+              <button className="special">Send Message</button>
             </li>
             <li>
               <input type="reset" value="Reset" />
