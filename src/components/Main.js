@@ -26,7 +26,7 @@ const Main = props => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": form.getAttribute("name"),
-        ...JSON.stringify(state)
+        ...state
       })
     })
       .then(() => navigate(form.getAttribute("action")))
@@ -139,7 +139,7 @@ const Main = props => {
         <form
           name="contact"
           method="post"
-          action="./thanks.js"
+          action="#"
           onSubmit={handleSubmit}
           data-netlify="true"
           data-netlify-honeypot="bot-field"
