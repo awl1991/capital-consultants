@@ -25,7 +25,7 @@ const Main = props => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "form-name": form.getAttribute("name"),
+        contact: form.getAttribute("name"),
         ...state
       })
     })
