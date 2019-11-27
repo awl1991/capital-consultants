@@ -152,7 +152,7 @@ const Main = props => {
               <input name="bot-field" onChange={handleChange} />
             </label>
           </p>
-          <div type="hidden" className="field half first">
+          <div className="field half first">
             <label htmlFor="name">Name</label>
             <input type="text" name="name" id="name" onChange={handleChange} />
           </div>
