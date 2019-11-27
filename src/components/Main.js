@@ -111,7 +111,6 @@ const Main = props => {
         <form
           name="contact"
           method="post"
-          action="#"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
@@ -135,7 +134,7 @@ const Main = props => {
           </div>
           <ul className="actions">
             <li>
-              <input type="submit" value="Send Message" className="special" />
+              <button className="special">Send Message</button>{" "}
             </li>
             <li>
               <input type="reset" value="Reset" />
