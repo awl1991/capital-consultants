@@ -35,7 +35,7 @@ const Main = props => {
   }
   let close = (
     <div
-      className="clos"
+      className="close"
       onClick={() => {
         props.onCloseArticle()
       }}
