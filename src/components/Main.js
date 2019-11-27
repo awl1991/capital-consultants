@@ -3,7 +3,6 @@ import React from "react"
 import { navigate } from "gatsby-link"
 import pic02 from "../images/pic02.png"
 import pic03 from "../images/pic03.jpg"
-import thanks from "./thanks"
 //import pic01 from "../images/pic01.jpg"
 
 function encode(data) {
@@ -27,7 +26,7 @@ const Main = props => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": form.getAttribute("name"),
-        ...state
+        ...JSON.stringify(state)
       })
     })
       .then(() => navigate(form.getAttribute("action")))
@@ -140,7 +139,7 @@ const Main = props => {
         <form
           name="contact"
           method="post"
-          action={thanks}
+          action="./thanks.js"
           onSubmit={handleSubmit}
           data-netlify="true"
           data-netlify-honeypot="bot-field"
