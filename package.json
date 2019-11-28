@@ -6,6 +6,7 @@
   "dependencies": {
     "core-js": "^3.4.2",
     "gatsby": "^2.15.28",
+    "gatsby-cli": "^2.8.14",
     "gatsby-plugin-manifest": "^2.2.20",
     "gatsby-plugin-offline": "^3.0.11",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
