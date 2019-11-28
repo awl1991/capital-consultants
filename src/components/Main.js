@@ -108,13 +108,7 @@ const Main = props => {
         style={{ display: "none" }}
       >
         <h3 className="major">Contact</h3>
-        <form
-          name="contact-cap"
-          method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-        >
-          <input hidden className="hidden" name="bot-field" />
+        <form name="contact-cap" method="post" data-netlify="true">
           <div className="field half first">
             <label htmlFor="name">Name</label>
             <input type="text" name="name" id="name" />
