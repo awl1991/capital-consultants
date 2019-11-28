@@ -108,7 +108,7 @@ const Main = props => {
         style={{ display: "none" }}
       >
         <h3 className="major">Contact</h3>
-        <form name="contact-cap" method="post" data-netlify="true">
+        <form subject="New Website Submission" name="contact-cap" method="post" data-netlify="true">
           <input type="hidden" name="form-name" value="contact-cap" />
           <div className="field half first">
             <label htmlFor="name">Name</label>
