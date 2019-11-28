@@ -109,7 +109,7 @@ const Main = props => {
       >
         <h3 className="major">Contact</h3>
         <form
-          name="contact-form"
+          name="contact-cap"
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
