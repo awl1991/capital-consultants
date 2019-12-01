@@ -2,8 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Capital Consultants",
     author: "Andrew Labunski",
-    description: "Large Loss Consulting Agency",
-    icon: ""
+    description: "Large Loss Consulting Agency"
   },
   plugins: [
     {
