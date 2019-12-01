@@ -11,7 +11,7 @@ module.exports = {
       options: {
         name: "gatsby-starter-default",
         start_url: "/",
-        icon: "src/images/logo.png" // This path is relative to the root of the site.
+        icon: "src/images/logo.png"
       }
     },
     "gatsby-plugin-sass",
