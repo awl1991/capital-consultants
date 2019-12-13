@@ -72,7 +72,7 @@ const Main = props => {
           Pellentesque condiment sem. In efficitur ligula tate urna. Maecenas
           laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et
           orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris
-          aliquet magna magna sed nunc rhoncus amet feugiat tempus.
+          aliquet magna magna sed nunc rhoncus amet feugiattempus.
         </p>
         {close}
       </article>
@@ -92,7 +92,7 @@ const Main = props => {
           Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
           eleifend, at eleifend sapien imperdiet ac. Aliquam erat volutpat.
           Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer
-          sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et
+          sollicitudin mauris nec lorem lctus ultrices. Aliquam libero et
           malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula
           sit amet ex mollis mattis lorem ipsum dolor sit amet.
         </p>
