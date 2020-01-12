@@ -46,17 +46,17 @@ const Main = props => {
 				<p>
 					Complex insurance claims require a multitude of expert consultants
 					such as engineers, architects, experienced estimators, insurance
-					policy experts, CPA’s and claims management professionals. Your
-					insurance carrier has all of these experts in place prior to the event
-					of your loss in order to protect their interests.
+					policy experts, CPA’s and claims management professionals.{" "}
+					<b>Your insurance carrier has all of these experts in place</b> prior
+					to the event of your loss in order to protect <i>their</i> interests.
 				</p>
 				<p>
-					It is to your benefit to retain your own firm to manage this process
-					on your behalf to allocate the proper experts to pursue your own
-					interests and to achieve the greatest outcome of claim satisfaction.
-					Claim satisfaction may not always be specific to financial outcome,
-					but an expeditious, accurate closure to avoid business or personal
-					interruption.
+					<b>It is to your benefit</b> to retain your own firm to manage this
+					process on your behalf to allocate the proper experts to pursue{" "}
+					<i>your</i> own interests and to achieve the greatest outcome of claim
+					satisfaction. Claim satisfaction may not always be specific to
+					financial outcome, but an expeditious, accurate closure to avoid
+					business or personal interruption.
 				</p>
 				{close}
 			</article>
@@ -80,26 +80,36 @@ const Main = props => {
 					instances outlined in your policy where your carrier can deny coverage
 					and legally refuse to accept liability under the basis that the
 					damages do not fall within the parameters listed within the particular
-					insurance policy. Because of this, carriers often enlist "experts" to
-					inspect the damages who paint a picture as to the cause or extent of
-					certain damages (usually the most expensive ones), and a persuasive
+					insurance policy.
+					<br />
+					<br />
+					Because of this, carriers often enlist "experts" to inspect the
+					damages who paint a picture as to the cause or extent of certain
+					damages (usually the most expensive ones), and a persuasive
 					justification as to why these damages will not be covered. One such
 					justification would be that the claimed peril did not cause the
-					damage, but that the damage was "pre-existing." Many policy holders do
-					not understand that these justifications are not black and white but
-					are heavily influenced by the carrier's interest to escape the
-					resposibility of an expensive liability. Additionally, most policy
-					holders simply are not aware that they have options hidden in their
-					policy that are highly successful when combined with a little patience
-					and a couple industry experts. We provide general consultation
-					services that will take into account your specific situation, and will
-					advise you on the best course of action to take with your claim.
-					Depending on your situation, we may advise you to employ the
-					assistance of certain necessary experts (such as a public adjuster)
-					who we know have a history of succesfully negotiating insurance claims
-					to a desired outcome. Our company exists to educate policy holders on
-					their options, and to provide assistance in making difficult decisions
-					when facing a seemingly unbeatable opponent.
+					damage, but that the damage was "pre-existing."
+					<br />
+					<br />
+					Many policy holders do not understand that these justifications are
+					not black and white but are heavily influenced by the carrier's
+					interest to escape the resposibility of an expensive liability.
+					Additionally, most policy holders simply are not aware that they have
+					options hidden in their policy that are highly successful when
+					combined with a little patience and a couple industry experts.
+					<br />
+					<br />
+					We provide general consultation services that will take into account
+					your specific situation, and will advise you on the best course of
+					action to take with your claim. Depending on your situation, we may
+					advise you to employ the assistance of certain necessary experts (such
+					as a public adjuster) who we know have a history of succesfully
+					negotiating insurance claims to a desired outcome.
+					<br />
+					<br />
+					Our company exists to educate policy holders on their options and to
+					provide assistance in making difficult decisions when facing a
+					seemingly unbeatable opponent.
 				</p>
 				{close}
 			</article>
@@ -154,33 +164,15 @@ const Main = props => {
 						<h4>General Claim Consulting</h4>
 					</li>
 					<p className="indent">
-						Filing an insurance claim can seem daunting depending on the scope
-						of liability that is at stake. Generally, your insurance carrier
-						carries the liability of certain structures on your property given a
-						certain peril (tornado, fire, flood, etc) occurs, however, there are
-						a host of instances outlined in your policy where your carrier can
-						deny coverage and legally refuse to accept liability under the basis
-						that the damages do not fall within the parameters listed within the
-						particular insurance policy. Because of this, carriers often enlist
-						"experts" to inspect the damages who paint a picture as to the cause
-						or extent of certain damages (usually the most expensive ones), and
-						a persuasive justification as to why these damages will not be
-						covered. One such justification would be that the claimed peril did
-						not cause the damage, but that the damage was "pre-existing." Many
-						policy holders do not understand that these justifications are not
-						black and white but are heavily influenced by the carrier's interest
-						to escape the resposibility of an expensive liability. Additionally,
-						most policy holders simply are not aware that they have options
-						hidden in their policy that are highly successful when combined with
-						a little patience and a couple industry experts. We provide general
-						consultation services that will take into account your specific
-						situation, and will advise you on the best course of action to take
-						with your claim. Depending on your situation, we may advise you to
-						employ the assistance of certain necessary experts (such as a public
-						adjuster) who we know have a history of succesfully negotiating
-						insurance claims to a desired outcome. Our company exists to educate
-						policy holders on their options, and to provide assistance in making
-						difficult decisions when facing a seemingly unbeatable opponent.
+						We provide general consultation services that will take into account
+						your specific situation, and will advise you on the best course of
+						action to take with your claim. Depending on your situation, we may
+						advise you to employ the assistance of certain necessary experts
+						(such as a public adjuster) who we know have a history of
+						succesfully negotiating insurance claims to a desirable outcome. Our
+						company exists to educate policy holders on their options, and to
+						provide assistance in making difficult decisions when facing a
+						seemingly unbeatable opponent.
 					</p>
 				</ul>
 				{close}
