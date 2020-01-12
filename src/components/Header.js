@@ -43,7 +43,7 @@ const Header = props => (
               props.onOpenArticle("work")
             }}
           >
-            Work
+            Why?
           </a>
         </li>
         <li>
@@ -53,7 +53,7 @@ const Header = props => (
               props.onOpenArticle("intro")
             }}
           >
-            Intro
+            Services
           </a>
         </li>
         <li>
