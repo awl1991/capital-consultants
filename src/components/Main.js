@@ -102,9 +102,9 @@ const Main = props => {
 					We provide general consultation services that will take into account
 					your specific situation, and will advise you on the best course of
 					action to take with your claim. Depending on your situation, we may
-					advise you to employ the assistance of certain necessary experts (such
-					as a public adjuster) who we know have a history of succesfully
-					negotiating insurance claims to a desired outcome.
+					assist in selecting certain necessary experts (such as public
+					adjusters or appraisers) who we know have a history of succesfully
+					negotiating insurance claims to a positive outcome.
 					<br />
 					<br />
 					Our company exists to educate policy holders on their options and to
