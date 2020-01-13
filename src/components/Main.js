@@ -48,7 +48,7 @@ const Main = props => {
 					<b>
 						Complex insurance claims require a multitude of expert consultants
 					</b>{" "}
-					such as adjusters, engineers, architects, experienced estimators,
+					such as adjusters, engineers, contractors, experienced estimators,
 					insurance policy experts, and claims management professionals.{" "}
 					<b>Your insurance carrier has such experts in place</b> <i>prior</i>{" "}
 					to the event of your loss in order to protect <i>their</i> interests.
