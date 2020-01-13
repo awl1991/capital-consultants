@@ -88,7 +88,7 @@ const Main = props => {
 					<br />
 					Attempting to leverage coverage restrictions in the policy, carriers
 					often enlist <i>their</i> "experts" to inspect the damages. They paint
-					a<i>particular</i> picture as to the cause or extent of certain
+					a <i>particular</i> picture as to the cause or extent of certain
 					damages (usually the most expensive ones) and provide a persuasive
 					justification as to why these damages will not be covered. One such
 					justification would be that the claimed peril did not cause the damage
