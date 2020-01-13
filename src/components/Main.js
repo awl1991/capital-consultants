@@ -87,7 +87,7 @@ const Main = props => {
 					particular insurance policy.
 					<br />
 					<br />
-					Attempting to leverage coverage restrictions in the policy, carriers
+					Attempting to leverage coverage restrictions in a policy, carriers
 					often enlist <i>their</i> "experts" to inspect the damages. They paint
 					a <i>particular</i> picture as to the cause or extent of certain
 					damages (usually the most expensive ones) and provide a persuasive
