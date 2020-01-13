@@ -174,7 +174,7 @@ const Main = props => {
 						and advise you with clear and concise reasons on the best course of
 						action to take regarding your claim. We also offer assistance in
 						selecting certain necessary experts (such as public adjusters,
-						appraisers, or umpires) who have a history of succesfully and
+						appraisers, or umpires) who have a history of successfully and
 						professionally negotiating insurance claim disputes. In our
 						experience, when a claim is filed, the biggest threat to policy
 						holders is not a possible denial from their insurance carrier, but
