@@ -32,7 +32,7 @@ const Main = props => {
 				</span>
 				<p>
 					<b>
-						Capital Consultants provides consultation services to indivuals or
+						Capital Consultants provides consultation services to individuals or
 						businesses who have filed <i>or</i> are considering filing an
 						insurance claim.
 					</b>{" "}
@@ -40,15 +40,16 @@ const Main = props => {
 					assistance in selecting the most qualified experts who will provide
 					you with the highest likelihood of achieving a desirable outcome. We
 					also provide appraisal or umpire services to individuals who have not
-					employeed our consultation services for the particular claim (this is
+					employed our consultation services for the particular claim (this is
 					to avoid a possible conflict of interest).
 				</p>
 				<p>
 					Complex insurance claims require a multitude of expert consultants
 					such as engineers, architects, experienced estimators, insurance
-					policy experts, CPA’s and claims management professionals.{" "}
-					<b>Your insurance carrier has all of these experts in place</b> prior
-					to the event of your loss in order to protect <i>their</i> interests.
+					policy experts, and claims management professionals.{" "}
+					<b>Your insurance carrier has all of these experts in place</b>{" "}
+					<i>prior</i> to the event of your loss in order to protect
+					<i>their</i> interests.
 				</p>
 				<p>
 					<b>It is to your benefit</b> to retain your own firm to manage this

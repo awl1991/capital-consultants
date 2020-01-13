@@ -84,7 +84,12 @@
 
 	@include breakpoint(xsmall) {
 		&.main {
+			padding: 0 20px 0 0;
 			margin: (_size(element-margin) * 0.75) 0;
+
+			img {
+				width: 100%;
+			}
 		}
 	}
 }
