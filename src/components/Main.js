@@ -201,8 +201,8 @@ const Main = props => {
 						desirable outcome. We will take into account your specific situation
 						and advise you with clear and concise reasons on the best course of
 						action to take regarding your claim. We also offer assistance in
-						selecting certain necessary experts (such as public adjusters,
-						appraisers, or umpires) who have a{" "}
+						selecting necessary third party professionals (such as public
+						adjusters, appraisers, or umpires) who have a{" "}
 						<b>
 							history of successfully and professionally negotiating insurance
 							claim disputes.
