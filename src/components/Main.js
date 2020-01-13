@@ -177,8 +177,8 @@ const Main = props => {
 						appraisers, or umpires) who have a history of successfully and
 						professionally negotiating insurance claim disputes. In our
 						experience, when a claim is filed, the biggest threat to policy
-						holders is not a possible denial from their insurance carrier, but
-						it is the understandable lack of familiarity with the complex
+						holders is not a possible denial from their insurance carrier but
+						the understandable lack of familiarity with the complex claims
 						process and an unawarness of highly-successful available options.
 					</p>
 				</ul>
