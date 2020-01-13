@@ -84,12 +84,13 @@ const Main = props => {
 					particular insurance policy.
 					<br />
 					<br />
-					Because of this, carriers often enlist "experts" to inspect the
-					damages who paint a particular picture as to the cause or extent of
-					certain damages (usually the most expensive ones), and who provide a
-					persuasive justification as to why these damages will not be covered.
-					One such justification would be that the claimed peril did not cause
-					the damage, but that the damage was "pre-existing."
+					Attempting to leverage coverage restrictions in the policy, carriers
+					often enlist "experts" to inspect the damages who paint a particular
+					picture as to the cause or extent of certain damages (usually the most
+					expensive ones), and who provide a persuasive justification as to why
+					these damages will not be covered. One such justification would be
+					that the claimed peril did not cause the damage, but that the damage
+					was "pre-existing."
 					<br />
 					<br />
 					Many policy holders do not understand that these justifications are
