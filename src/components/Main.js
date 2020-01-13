@@ -155,7 +155,7 @@ const Main = props => {
 						fair settlement. In this case, both the policy holder and the
 						carrier provide several candidates to act as an umpire. Once these
 						candidates are provided, both parties must agree on only one umpire
-						from the list of options. If the both parties do not come to an
+						from the list of options. If both parties do not come to an
 						agreement on an umpire, a judge is appointed to make the umpire
 						selection from the given pool. Once an umpire is appointed, he/she
 						observes the damages and considers both appraisals and comes to a
