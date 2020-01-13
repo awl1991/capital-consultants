@@ -34,22 +34,24 @@ const Main = props => {
 					<b>
 						Capital Consultants provides consultation services to individuals or
 						businesses who have filed <i>or</i> are considering filing an
-						insurance claim.
+						insurance claim. We also offer assistance with denied and/or old
+						claims (filed within the previous two years).
 					</b>{" "}
 					We provide advice as to the quality of the claim, as well as
-					assistance in selecting the most qualified experts who will provide
-					you with the highest likelihood of achieving a desirable outcome. We
-					also provide appraisal or umpire services to individuals who have not
-					employed our consultation services for the particular claim (this is
-					to avoid a possible conflict of interest).
+					assistance with selecting the most qualified experts who will provide
+					you with the highest likelihood of achieving a desirable outcome.
+					Additionally, we offer appraisal or umpire services to individuals who
+					have not employed our consultation services for the particular claim
+					(this is to avoid a possible conflict of interest).
 				</p>
 				<p>
-					Complex insurance claims require a multitude of expert consultants
-					such as engineers, architects, experienced estimators, insurance
-					policy experts, and claims management professionals.{" "}
-					<b>Your insurance carrier has all of these experts in place</b>{" "}
-					<i>prior</i> to the event of your loss in order to protect{" "}
-					<i>their</i> interests.
+					<b>
+						Complex insurance claims require a multitude of expert consultants
+					</b>{" "}
+					such as adjusters, engineers, architects, experienced estimators,
+					insurance policy experts, and claims management professionals.{" "}
+					<b>Your insurance carrier has such experts in place</b> <i>prior</i>{" "}
+					to the event of your loss in order to protect <i>their</i> interests.
 				</p>
 				<p>
 					<b>It is to your benefit</b> to retain your own firm to manage this
@@ -130,7 +132,9 @@ const Main = props => {
 				</span>
 				<ul>
 					<li>
-						<h4>Appraisals</h4>
+						<b>
+							<h3>Appraisals</h3>
+						</b>
 					</li>{" "}
 					<p className="indent">
 						<b>
@@ -151,7 +155,9 @@ const Main = props => {
 						</b>
 					</p>
 					<li>
-						<h4>Umpire Services</h4>
+						<b>
+							<h3>Umpire Services</h3>
+						</b>
 					</li>
 					<p className="indent">
 						<b>In the event that the appraisers do not come to an agreement</b>{" "}
@@ -172,7 +178,9 @@ const Main = props => {
 						</b>
 					</p>
 					<li>
-						<h4>General Claim Consulting</h4>
+						<b>
+							<h3>General Claim Consulting</h3>
+						</b>
 					</li>
 					<p className="indent">
 						In our experience, when a claim is filed,{" "}
