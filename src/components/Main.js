@@ -264,19 +264,6 @@ const Main = props => {
 							<span className="label">Facebook</span>
 						</a>
 					</li>
-					<li>
-						<a href="https://codebushi.com" className="icon fa-instagram">
-							<span className="label">Instagram</span>
-						</a>
-					</li>
-					<li>
-						<a
-							href="https://github.com/codebushi/gatsby-starter-dimension"
-							className="icon fa-github"
-						>
-							<span className="label">GitHub</span>
-						</a>
-					</li>
 				</ul>
 				{close}
 			</article>
