@@ -56,15 +56,39 @@
 			)
 		);
 		background-image: url("../../images/blueprint.png");
-		background-size: 26%;
-		height: 75%;
-		opacity: 0.9;
+		background-size: 38%;
+		height: 80%;
+		opacity: 1;
 		background-repeat: repeat-x;
+		margin-top: -20px;
 		z-index: 2;
+
+		@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+			background-position: top center;
+			opacity: 0.8;
+			background-repeat: repeat-x;
+			background-size: 50%;
+			height: 50vh;
+		}
+
+		@include breakpoint(medium) {
+			background-position: top center;
+			opacity: 0.8;
+			background-repeat: repeat-x;
+			background-size: 50%;
+			height: 88vh;
+		}
+
+		@include breakpoint(xsmall) {
+			background-position: top center;
+			background-size: 80%;
+			opacity: 0.5;
+			height: 90vh;
+		}
 	}
 
 	&:after {
-		@include vendor("transform", "scale(1.2)");
+		@include vendor("transform", "scale(1)");
 		@include vendor(
 			"transition",
 			(
@@ -137,6 +161,28 @@
 		background-size: 900px 500px;
 		background-repeat: repeat-x;
 		z-index: 1;
+
+		@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+			background-position: bottom center;
+			opacity: 0.8;
+			background-repeat: no-repeat;
+			background-size: 115%;
+			height: 88vh;
+		}
+
+		@include breakpoint(medium) {
+			background-position: bottom center;
+			opacity: 0.8;
+			background-repeat: no-repeat;
+			background-size: 115%;
+			height: 88vh;
+		}
+
+		@include breakpoint(xsmall) {
+			background-position: bottom center;
+			opacity: 0.4;
+			background-repeat: no-repeat;
+		}
 	}
 	&:after {
 		@include vendor("transform", "scale(1.2)");
