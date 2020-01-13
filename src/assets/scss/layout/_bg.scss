@@ -142,7 +142,7 @@
 		height: 100%;
 	}
 	&:after {
-		@include vendor("transform", "scale(1.5)");
+		@include vendor("transform", "scale(1)");
 		@include vendor(
 			"transition",
 			(
@@ -157,7 +157,7 @@
 		height: 100vh;
 		opacity: 0.8;
 		background-image: url("../../images/bg.png");
-		background-position: bottom left;
+		background-position: bottom center;
 		background-size: 900px 500px;
 		background-repeat: repeat-x;
 		z-index: 1;
@@ -185,7 +185,7 @@
 		}
 	}
 	&:after {
-		@include vendor("transform", "scale(1.2)");
+		@include vendor("transform", "scale(1.15)");
 		@include vendor(
 			"transition",
 			(
@@ -197,7 +197,7 @@
 
 	.body.is-article-visible & {
 		&:after {
-			@include vendor("transform", "scale(1.1)");
+			@include vendor("transform", "scale(1)");
 			@include vendor("filter", "blur(0.01rem)");
 		}
 	}
