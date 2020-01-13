@@ -34,12 +34,12 @@
 		max-width: 100%;
 		background-color: transparentize(_palette(bg), 0.15);
 		border-radius: 0;
-		opacity: 0;
+		opacity: 1;
 
 		.indent {
-			padding-left: 10px;
+			padding-left: 20px;
 			margin-top: -10px;
-			margin-bottom: 10px;
+			margin-bottom: 20px;
 		}
 
 		&.timeout {
@@ -53,7 +53,7 @@
 
 		&.active {
 			display: block !important;
-			background: rgba(255, 255, 255, 0.01);
+			background: rgb(20, 20, 20);
 		}
 
 		.close {

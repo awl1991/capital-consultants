@@ -77,46 +77,56 @@ const Main = props => {
 					<img src={pic02} alt="" />
 				</span>
 				<p>
-					Filing an insurance claim can seem daunting depending on the scope of
-					liability that is at stake. Generally, your insurance carrier holds
-					the liability of certain structures on your property given a certain
-					"peril" (tornado, fire, flood, etc) occurs. There are, however, a host
-					of instances outlined in your policy where your carrier can deny
-					coverage and legally refuse to accept liability under the basis that
-					the damages do not fall within the parameters listed within the
-					particular insurance policy.
+					<b>Filing an insurance claim can seem daunting</b> depending on the
+					scope of liability that is at stake. Generally, your insurance carrier
+					holds the liability of certain structures on your property given a
+					certain "peril" (tornado, fire, flood, etc) occurs. There are,
+					however, a host of instances outlined in your policy where your
+					carrier can deny coverage and legally refuse to accept liability under
+					the basis that the damages do not fall within the parameters listed
+					within the particular insurance policy.
 					<br />
 					<br />
-					Attempting to leverage coverage restrictions in a policy, carriers
-					often enlist <i>their</i> "experts" to inspect the damages. They paint
-					a <i>particular</i> picture as to the cause or extent of certain
-					damages (usually the most expensive ones) and provide a persuasive
-					justification as to why these damages will not be covered. One such
-					justification would be that the claimed peril did not cause the damage
-					but that the damage was "pre-existing."
+					<b>Attempting to leverage coverage restrictions in a policy,</b>{" "}
+					carriers often enlist <i>their</i> "experts" to inspect the damages.
+					They paint a <i>particular</i> picture as to the cause or extent of
+					certain damages (usually the most expensive ones) and{" "}
+					<b>
+						provide a persuasive justification as to why these damages will not
+						be covered.
+					</b>{" "}
+					One such justification would be that the claimed peril did not cause
+					the damage but that the damage was "pre-existing."
 					<br />
 					<br />
 					Many policy holders do not understand that these justifications are
-					not black and white but are often heavily influenced by the carrier's
-					interest to escape the resposibility of an expensive liability.
-					Additionally, most policy holders are simply unaware of certain
-					options hidden in their policy that, when utilized, are
-					highly-successful when combined with some patience and a couple
-					third-party professionals.
+					not black and white but are often{" "}
+					<b>
+						heavily influenced by the carrier's interest to escape the
+						resposibility of an expensive liability.
+					</b>{" "}
+					Additionally,{" "}
+					<b>
+						most policy holders are simply unaware of certain options hidden in
+						their policy that, when utilized, are <i>highly-successful</i> when
+						combined with some patience and a couple third-party professionals.
+					</b>
 					<br />
 					<br />
-					Capital Consultants provides general consultation services that will
-					take into account your specific situation, and will advise you on the
-					best course of action to take with your claim. Depending on your
+					<b>Capital Consultants provides general consultation services</b> that
+					will take into account your specific situation, and will advise you on
+					the best course of action to take with your claim. Depending on your
 					situation, we may assist in selecting necessary third party
 					professionals (such as public adjusters or appraisers) who we know
-					have a history of succesfully negotiating insurance claims to a
-					positive outcome.
+					have a history of{" "}
+					<b>succesfully negotiating insurance claims to a positive outcome.</b>
 					<br />
 					<br />
-					Our company exists to educate policy holders on their options and to
-					provide assistance in making difficult decisions when facing a
-					seemingly unbeatable opponent.
+					<b>
+						Our company exists to educate policy holders on their options and to
+						provide assistance in making difficult decisions when facing a
+						seemingly unbeatable opponent.
+					</b>
 				</p>
 				{close}
 			</article>
