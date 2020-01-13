@@ -167,6 +167,10 @@ const Main = props => {
 						<h4>General Claim Consulting</h4>
 					</li>
 					<p className="indent">
+						In our experience, when a claim is filed, the biggest threat to
+						policy holders is not a possible denial from their insurance carrier
+						but the understandable lack of familiarity with the complex claims
+						process and an unawarness of highly-successful available options.
 						Capital Consultants' general consultation services offer access to
 						our years of accumulated knowledge of the insurance claim industry
 						that can help you correctly navigate your insurance claim to a
@@ -175,11 +179,7 @@ const Main = props => {
 						action to take regarding your claim. We also offer assistance in
 						selecting certain necessary experts (such as public adjusters,
 						appraisers, or umpires) who have a history of successfully and
-						professionally negotiating insurance claim disputes. In our
-						experience, when a claim is filed, the biggest threat to policy
-						holders is not a possible denial from their insurance carrier but
-						the understandable lack of familiarity with the complex claims
-						process and an unawarness of highly-successful available options.
+						professionally negotiating insurance claim disputes.
 					</p>
 				</ul>
 				{close}
