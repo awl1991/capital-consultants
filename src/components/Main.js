@@ -94,7 +94,7 @@ const Main = props => {
 					<br />
 					<br />
 					Many policy holders do not understand that these justifications are
-					not black and white but are heavily influenced by the carrier's
+					not black and white but are often heavily influenced by the carrier's
 					interest to escape the resposibility of an expensive liability.
 					Additionally, most policy holders simply are not aware that they have
 					options hidden in their policy that, when utilized, are
