@@ -77,7 +77,7 @@ const Main = props => {
 					Filing an insurance claim can seem daunting depending on the scope of
 					liability that is at stake. Generally, your insurance carrier holds
 					the liability of certain structures on your property given a certain
-					"peril" (tornado, fire, flood, etc) occurs, however, there are a host
+					"peril" (tornado, fire, flood, etc) occurs. There are, however, a host
 					of instances outlined in your policy where your carrier can deny
 					coverage and legally refuse to accept liability under the basis that
 					the damages do not fall within the parameters listed within the
