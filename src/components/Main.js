@@ -108,9 +108,10 @@ const Main = props => {
 					Capital Consultants provides general consultation services that will
 					take into account your specific situation, and will advise you on the
 					best course of action to take with your claim. Depending on your
-					situation, we may assist in selecting certain necessary experts (such
-					as public adjusters or appraisers) who we know have a history of
-					succesfully negotiating insurance claims to a positive outcome.
+					situation, we may assist in selecting necessary third party
+					professionals (such as public adjusters or appraisers) who we know
+					have a history of succesfully negotiating insurance claims to a
+					positive outcome.
 					<br />
 					<br />
 					Our company exists to educate policy holders on their options and to
