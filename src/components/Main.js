@@ -48,7 +48,7 @@ const Main = props => {
 					such as engineers, architects, experienced estimators, insurance
 					policy experts, and claims management professionals.{" "}
 					<b>Your insurance carrier has all of these experts in place</b>{" "}
-					<i>prior</i> to the event of your loss in order to protect
+					<i>prior</i> to the event of your loss in order to protect{" "}
 					<i>their</i> interests.
 				</p>
 				<p>
