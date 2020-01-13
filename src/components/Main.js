@@ -95,16 +95,17 @@ const Main = props => {
 					not black and white but are heavily influenced by the carrier's
 					interest to escape the resposibility of an expensive liability.
 					Additionally, most policy holders simply are not aware that they have
-					options hidden in their policy that are highly successful when
-					combined with a little patience and a couple industry experts.
+					options hidden in their policy that, when utilized, are
+					highly-successful when combined with some patience and a couple
+					industry experts.
 					<br />
 					<br />
-					We provide general consultation services that will take into account
-					your specific situation, and will advise you on the best course of
-					action to take with your claim. Depending on your situation, we may
-					assist in selecting certain necessary experts (such as public
-					adjusters or appraisers) who we know have a history of succesfully
-					negotiating insurance claims to a positive outcome.
+					Capital Consultants provides general consultation services that will
+					take into account your specific situation, and will advise you on the
+					best course of action to take with your claim. Depending on your
+					situation, we may assist in selecting certain necessary experts (such
+					as public adjusters or appraisers) who we know have a history of
+					succesfully negotiating insurance claims to a positive outcome.
 					<br />
 					<br />
 					Our company exists to educate policy holders on their options and to
@@ -164,15 +165,19 @@ const Main = props => {
 						<h4>General Claim Consulting</h4>
 					</li>
 					<p className="indent">
-						We provide general consultation services that will take into account
-						your specific situation, and will advise you on the best course of
-						action to take with your claim. Depending on your situation, we may
-						advise you to employ the assistance of certain necessary experts
-						(such as a public adjuster) who we know have a history of
-						succesfully negotiating insurance claims to a desirable outcome. Our
-						company exists to educate policy holders on their options, and to
-						provide assistance in making difficult decisions when facing a
-						seemingly unbeatable opponent.
+						Capital Consultants' general consultation services offer access to
+						our years of accumulated knowledge of the insurance claim industry
+						that can help you correctly navigate your insurance claim to a
+						desirable outcome. We will take into account your specific situation
+						and advise you with clear and concise reasons on the best course of
+						action to take regarding your claim. We also offer assistance in
+						selecting certain necessary experts (such as public adjusters,
+						appraisers, or umpires) who have a history of succesfully and
+						professionally negotiating insurance claim disputes. In our
+						experience, when a claim is filed, the biggest threat to policy
+						holders is not a possible denial from their insurance carrier, but
+						it is the understandable lack of familiarity with the complex
+						process and an unawarness of highly-successful available options.
 					</p>
 				</ul>
 				{close}
