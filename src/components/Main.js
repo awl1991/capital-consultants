@@ -56,7 +56,7 @@ const Main = props => {
 					process on your behalf to allocate the proper experts to pursue{" "}
 					<i>your</i> own interests and to achieve the greatest outcome of claim
 					satisfaction. Claim satisfaction may not always be specific to
-					financial outcome, but an expeditious, accurate closure to avoid
+					financial outcome but an expeditious, accurate closure to avoid
 					business or personal interruption.
 				</p>
 				{close}
