@@ -134,11 +134,11 @@ const Main = props => {
 					</li>{" "}
 					<p className="indent">
 						Appraisal is a process which effectively removes the checkbook from
-						your carriers control and puts it into the hand of third party
+						your carrier's control and puts it into the hand of third party
 						appraisers. In appraisal, both the policy holder and the carrier
 						provide a third party appraiser to observe the damages and come to a
-						conclusion about the cost of the the damages at question. This is an
-						option oulined in almost every insurance policy and usually the
+						conclusion about the cost of the the damages in question. This is an
+						option oulined in almost every insurance policy, and usually the
 						outcome proves beneficial to the policy holder ─ provided the policy
 						holder hires a quality appraiser. Once both of the appraisers come
 						to an agreement on the amount of the settlement as outlined by the
