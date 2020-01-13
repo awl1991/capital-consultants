@@ -160,7 +160,7 @@ const Main = props => {
 						selection from the given pool. Once an umpire is appointed, he/she
 						observes the damages and considers both appraisals and comes to a
 						final conclusion about the final settlement that will be paid by the
-						carrier. Just like with appraisal this decision is final and the
+						carrier. Just like with appraisal, this decision is final, and the
 						carrier MUST pay.
 					</p>
 					<li>
