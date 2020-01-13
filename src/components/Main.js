@@ -133,44 +133,58 @@ const Main = props => {
 						<h4>Appraisals</h4>
 					</li>{" "}
 					<p className="indent">
-						Appraisal is a process which effectively removes the checkbook from
-						your carrier's control and puts it into the hand of third party
-						appraisers. In appraisal, both the policy holder and the carrier
-						provide a third party appraiser to observe the damages and come to a
-						conclusion about the cost of the the damages in question. This is an
-						option oulined in almost every insurance policy, and usually the
-						outcome proves beneficial to the policy holder ─ provided the policy
-						holder hires a quality appraiser. Once both of the appraisers come
-						to an agreement on the amount of the settlement as outlined by the
-						particular insurance policy, the insurance carrier MUST pay that
-						amount.
+						<b>
+							Appraisal is a process which effectively removes the checkbook
+							from your carrier's control
+						</b>{" "}
+						and puts it into the hand of third party appraisers. In appraisal,
+						both the policy holder and the carrier provide a third party
+						appraiser to observe the damages and come to a conclusion about the
+						cost of the the damages in question. This is an option oulined in
+						almost every insurance policy, and <i>usually</i>{" "}
+						<b>the outcome proves beneficial to the policy holder</b> ─ provided
+						the policy holder hires a quality appraiser.{" "}
+						<b>
+							Once <i>both</i> appraisers come to an agreement on the settlement
+							amount as outlined by the particular insurance policy, the
+							insurance carrier <i>MUST</i> pay that amount.
+						</b>
 					</p>
 					<li>
 						<h4>Umpire Services</h4>
 					</li>
 					<p className="indent">
-						In the event that the appraisers do not come to an agreement on the
-						cost of the settlement of the claim, an umpire is selected to
+						<b>In the event that the appraisers do not come to an agreement</b>{" "}
+						on the cost of the settlement of the claim, an umpire is selected to
 						consider both appraisers' estimates and make the final decision on a
 						fair settlement. In this case, both the policy holder and the
 						carrier provide several candidates to act as an umpire. Once these
-						candidates are provided, both parties must agree on only one umpire
-						from the list of options. If both parties do not come to an
-						agreement on an umpire, a judge is appointed to make the umpire
-						selection from the given pool. Once an umpire is appointed, he/she
+						candidates are provided, both parties must agree on <i>only one</i>{" "}
+						umpire from the list of options. If both parties do not come to an
+						agreement on an umpire, a judge will appoint the umpire from the
+						given pool of candidates. Once an umpire is appointed, he/she
 						observes the damages and considers both appraisals and comes to a
 						final conclusion about the final settlement that will be paid by the
-						carrier. Just like with appraisal, this decision is final, and the
-						carrier MUST pay.
+						carrier.{" "}
+						<b>
+							Just like with appraisal, this decision is final, and the carrier{" "}
+							<i>MUST</i> pay.
+						</b>
 					</p>
 					<li>
 						<h4>General Claim Consulting</h4>
 					</li>
 					<p className="indent">
-						In our experience, when a claim is filed, the biggest threat to
-						policy holders is not a possible denial from their insurance carrier
-						but the understandable lack of familiarity with the complex claims
-						process and an unawarness of highly-successful available options.
+						In our experience, when a claim is filed,{" "}
+						<b>
+							the biggest threat to policy holders is <i>not</i> a possible
+							denial from their insurance carrier
+						</b>{" "}
+						but the understandable{" "}
+						<b>
+							lack of familiarity with the complex claims process and an
+							unawarness of highly-successful available options.{" "}
+						</b>
 						Capital Consultants' general consultation services offer access to
 						our years of accumulated knowledge of the insurance claim industry
 						that can help you correctly navigate your insurance claim to a
@@ -178,8 +192,11 @@ const Main = props => {
 						and advise you with clear and concise reasons on the best course of
 						action to take regarding your claim. We also offer assistance in
 						selecting certain necessary experts (such as public adjusters,
-						appraisers, or umpires) who have a history of successfully and
-						professionally negotiating insurance claim disputes.
+						appraisers, or umpires) who have a{" "}
+						<b>
+							history of successfully and professionally negotiating insurance
+							claim disputes.
+						</b>
 					</p>
 				</ul>
 				{close}
