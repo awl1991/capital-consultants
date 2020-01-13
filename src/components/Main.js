@@ -99,10 +99,10 @@ const Main = props => {
 					Many policy holders do not understand that these justifications are
 					not black and white but are often heavily influenced by the carrier's
 					interest to escape the resposibility of an expensive liability.
-					Additionally, most policy holders simply are not aware that they have
+					Additionally, most policy holders simply are simply unaware of certain
 					options hidden in their policy that, when utilized, are
 					highly-successful when combined with some patience and a couple
-					industry experts.
+					third-party professionals.
 					<br />
 					<br />
 					Capital Consultants provides general consultation services that will
