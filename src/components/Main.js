@@ -151,7 +151,7 @@ const Main = props => {
 					<p className="indent">
 						In the event that the appraisers do not come to an agreement on the
 						cost of the settlement of the claim, an umpire is selected to
-						consider both appraisers estimates, and make the final decision on a
+						consider both appraisers' estimates and make the final decision on a
 						fair settlement. In this case, both the policy holder and the
 						carrier provide several candidates to act as an umpire. Once these
 						candidates are provided, both parties must agree on only one umpire
