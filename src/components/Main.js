@@ -99,7 +99,7 @@ const Main = props => {
 					Many policy holders do not understand that these justifications are
 					not black and white but are often heavily influenced by the carrier's
 					interest to escape the resposibility of an expensive liability.
-					Additionally, most policy holders simply are simply unaware of certain
+					Additionally, most policy holders are simply unaware of certain
 					options hidden in their policy that, when utilized, are
 					highly-successful when combined with some patience and a couple
 					third-party professionals.
