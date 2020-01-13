@@ -190,10 +190,10 @@ const Main = props => {
 							the biggest threat to policy holders is <i>not</i> a possible
 							denial from their insurance carrier
 						</b>{" "}
-						but the understandable{" "}
+						but the{" "}
 						<b>
-							lack of familiarity with the complex claims process and an
-							unawarness of highly-successful available options.{" "}
+							understandable lack of familiarity with the complex claims process
+							and an unawarness of highly-successful available options.{" "}
 						</b>
 						Capital Consultants' general consultation services offer access to
 						our years of accumulated knowledge of the insurance claim industry
