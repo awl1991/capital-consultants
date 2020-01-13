@@ -1,8 +1,8 @@
 import PropTypes from "prop-types"
 import React from "react"
+import pic01 from "../images/pic01.png"
 import pic02 from "../images/pic02.png"
-import pic03 from "../images/pic03.jpg"
-//import pic01 from "../images/pic01.jpg"
+import pic03 from "../images/pic03.png"
 const Main = props => {
 	let close = (
 		<div
@@ -28,7 +28,7 @@ const Main = props => {
 			>
 				<h3 className="major">About</h3>
 				<span className="image main">
-					<img src={pic02} alt="" />
+					<img src={pic01} alt="" />
 				</span>
 				<p>
 					<b>
