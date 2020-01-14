@@ -86,6 +86,14 @@
 				opacity: 0.8;
 				background-size: 20px 20px;
 				background-repeat: no-repeat;
+
+				@include breakpoint(small) {
+					margin-top: 1rem;
+				}
+
+				@include breakpoint(xsmall) {
+					margin-top: 1rem;
+				}
 			}
 
 			&:hover {

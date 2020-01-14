@@ -4,7 +4,10 @@
   "version": "1.0.0",
   "author": "",
   "dependencies": {
+    "animejs": "^3.1.0",
+    "classnames": "^2.2.6",
     "core-js": "^3.4.2",
+    "framer-motion": "^1.7.0",
     "gatsby": "^2.15.28",
     "gatsby-cli": "^2.8.14",
     "gatsby-plugin-manifest": "^2.2.20",
