@@ -41,17 +41,35 @@
 
 	> :first-child {
 		margin-top: 0;
-
 		&:before {
 			display: none;
+			opacity: 0.1;
 		}
+		transition: opacity 3s ease;
 	}
 
 	.logo {
-		width: 12rem;
 		height: 12rem;
-		border-bottom: solid _size(border-width) _palette(border);
+		width: 12rem;
 		padding-top: 12px;
+		transition: padding-top 12s ease;
+		border-bottom: solid _size(border-width) _palette(border);
+	}
+	.logoStyle {
+		position: "absolute";
+		left: 0;
+		right: 0;
+		margin-left: "auto";
+		margin-right: "auto";
+		opacity: 1;
+		margin-top: 0;
+		transition: margin-top 2s ease;
+		&:hover {
+			opacity: 0.8;
+			transition: opacity 2s ease;
+			margin-top: 10px;
+			transition: margin-top 2s ease;
+		}
 	}
 
 	.content {
@@ -67,7 +85,7 @@
 				(
 					"max-height #{_duration(intro)} ease",
 					"padding #{_duration(intro)} ease",
-					"opacity #{_duration(article)} ease-in-out"
+					"opacity #{_duration(article)} ease-in"
 				)
 			);
 			@include vendor("transition-delay", "0.25s");
