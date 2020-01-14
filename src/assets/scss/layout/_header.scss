@@ -52,7 +52,6 @@
 		height: 12rem;
 		width: 12rem;
 		padding-top: 12px;
-		transition: padding-top 12s ease;
 		border-bottom: solid _size(border-width) _palette(border);
 	}
 	.logoStyle {
@@ -130,7 +129,7 @@
 					max-width: 10rem;
 					height: 2.75rem;
 					line-height: 2.75rem;
-					padding: 0 1.25rem 0 (1.25rem + _font(letter-spacing));
+					padding: 0 1.2rem 0 (1.25rem + _font(letter-spacing));
 					text-transform: uppercase;
 					letter-spacing: _font(letter-spacing);
 					font-size: 0.8rem;
