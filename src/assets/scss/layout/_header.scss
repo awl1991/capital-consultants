@@ -62,13 +62,6 @@
 		margin-right: "auto";
 		opacity: 1;
 		margin-top: 0;
-		transition: margin-top 2s ease;
-		&:hover {
-			opacity: 0.8;
-			transition: opacity 2s ease;
-			margin-top: 10px;
-			transition: margin-top 2s ease;
-		}
 	}
 
 	.content {
