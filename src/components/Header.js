@@ -1,45 +1,95 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { motion } from "framer-motion"
-import shadowLogo from "../images/logo_w_shadow.png"
 
-const fade = {
-	visible: { delay: 0.5, opacity: 1, transition: { duration: 2 } },
-	hidden: { opacity: 0 }
-}
+import shadowLogo from "../images/mainlogo.svg"
 
-const slide = {
-	visible: {
+const logoSlide = {
+	before: { marginTop: "20px" },
+
+	after: {
 		marginTop: "0px",
 		transition: {
-			delay: 0.5,
+			delay: 0.7,
 			duration: 1,
+			easing: "ease-in-out",
+			damping: 10
+		}
+	}
+}
+
+const containerVariants = {
+	before: {},
+	after: { transition: { staggerChildren: 0.03 } }
+}
+
+const letterVariants = {
+	before: {
+		opacity: 0,
+		fontSize: "1.5rem",
+		y: 0,
+		transition: {
 			type: "spring",
-			velocity: 2
+			ease: "easeOut",
+			damping: 40,
+			stiffness: 100
 		}
 	},
-	hidden: { marginTop: "30px" }
+	after: {
+		opacity: 1,
+		fontSize: "0.8rem",
+		y: 0,
+		transition: {
+			type: "spring",
+			ease: "easeOut",
+			damping: 40,
+			stiffness: 100
+		}
+	}
 }
+const string = Array.from("Large Loss Consulting Agency")
 
 const Header = props => {
 	return (
 		<header id="header" style={props.timeout ? { display: "none" } : {}}>
 			<div className="logo">
-				<motion.div initial="hidden" animate="visible" variants={slide}>
-					<motion.img
-						className="capLogo"
-						src={shadowLogo}
-						alt="Capital Consultants"
-						initial="hidden"
-						animate="visible"
-						variants={fade}
-					/>
-				</motion.div>
+				<motion.object
+					type="image/svg+xml"
+					className="capLogo"
+					data={shadowLogo}
+					alt="Capital Consultants"
+					variants={logoSlide}
+					initial={"before"}
+					animate={"after"}
+				/>
 			</div>
 			<div className="content">
 				<div className="inner">
 					<h1>Capital Consultants</h1>
-					<p>Large Loss Consulting Agency</p>
+					<motion.p
+						variants={containerVariants}
+						initial={"before"}
+						animate={"after"}
+						width={"100%"}
+						height={20}
+						background={""}
+						style={{
+							display: "flex",
+							justifyContent: "center"
+						}}
+					>
+						{string.map((letter, index) => (
+							<motion.span
+								key={index}
+								variants={letterVariants}
+								width={"auto"}
+								height={20}
+								style={{ position: "relative" }}
+							>
+								{letter === " " ? "\u00A0" : letter}
+							</motion.span>
+						))}
+					</motion.p>
 				</div>
 			</div>
 			<nav>
