@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.thecapitalconsultants.com" target="_blank">
-    <img width="150px" src="https://github.com/awl1991/capital-consultants/blob/master/src/images/logo.png?raw=true">
+    <img type="image/svg+xml" width="150px" data="https://raw.githubusercontent.com/awl1991/capital-consultants/master/src/images/mainlogo.svg?token=ADY3SWKV7YRHEDRU7VHQ4AK6D3EPE">
   </a>
 </p>
 <h2 align="center">
