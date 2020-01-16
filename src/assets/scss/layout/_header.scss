@@ -50,7 +50,6 @@
 		height: 12rem;
 		width: 12rem;
 		border-bottom: solid _size(border-width) _palette(border);
-		padding-top: 7px;
 	}
 
 	.capLogo {
@@ -59,8 +58,9 @@
 		right: 0;
 		margin-left: "auto";
 		margin-right: "auto";
-		height: "100%";
-		filter: brightness(55%);
+		margin-bottom: -8px;
+		height: 88%;
+		filter: brightness(60%);
 	}
 
 	.content {

@@ -1,24 +1,24 @@
 import React from "react"
 import PropTypes from "prop-types"
-import bwlogo from "../images/bw_logo_small.png"
+import bwlogo from "../images/footer_icon.svg"
 
 const bwlogoStyle = {
-  height: ".5rem",
-  opacity: ".65",
-  marginRight: "3px"
+	height: ".5rem",
+	marginRight: "3px",
+	marginBottom: "-.7px"
 }
 
 const Footer = props => (
-  <footer id="footer" style={props.timeout ? { display: "none" } : {}}>
-    <p className="copyright">
-      <img style={bwlogoStyle} src={bwlogo} alt="·" />
-      │&copy; Capital Consultants L.L.C.
-    </p>
-  </footer>
+	<footer id="footer" style={props.timeout ? { display: "none" } : {}}>
+		<p className="copyright">
+			<img style={bwlogoStyle} src={bwlogo} alt="·" />
+			│&copy; Capital Consultants L.L.C.
+		</p>
+	</footer>
 )
 
 Footer.propTypes = {
-  timeout: PropTypes.bool
+	timeout: PropTypes.bool
 }
 
 export default Footer

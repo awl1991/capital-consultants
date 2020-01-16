@@ -6,41 +6,44 @@
 $ipad: "all and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)";
 /* Footer */
 
-	#footer {
-		@include vendor('transition', (
-			'transform #{_duration(article)} ease-in-out',
-			'filter #{_duration(article)} ease-in-out',
-			'opacity #{_duration(article)} ease-in-out',
-		));
-		width: 100%;
-		max-width: 100%;
-		margin-top: 2rem;
-		text-align: center;
+#footer {
+	@include vendor(
+		"transition",
+		(
+			"transform #{_duration(article)} ease-in-out",
+			"filter #{_duration(article)} ease-in-out",
+			"opacity #{_duration(article)} ease-in-out"
+		)
+	);
 
-		.copyright {
-			letter-spacing: _font(letter-spacing);
+	width: 100%;
+	max-width: 100%;
+	margin-top: 2rem;
+	text-align: center;
+
+	.copyright {
+		letter-spacing: _font(letter-spacing);
+		font-size: 0.6rem;
+		opacity: 0.5;
+		margin-bottom: -5px;
+		text-transform: uppercase;
+		color: _palette(fg-sub);
+		@include breakpoint(xsmall) {
+			font-size: 0.5rem;
+		}
+		@media #{$ipad} {
 			font-size: 0.6rem;
-			opacity: 0.5;
-			margin-bottom: -5px;
-			text-transform: uppercase;
-			color: _palette(fg-sub);
-			@include breakpoint(xsmall) {
-				font-size: .5rem;
-			}
-			@media #{$ipad} {
-				font-size: .6rem;
-				margin-bottom: 0px;
-			}
-		}
-
-
-		.body.is-article-visible & {
-			@include vendor('transform', 'scale(0.95)');
-			@include vendor('filter', 'blur(0.1rem)');
-			opacity: 0;
-		}
-
-		.body.is-loading & {
-			opacity: 0;
+			margin-bottom: 0px;
 		}
 	}
+
+	.body.is-article-visible & {
+		@include vendor("transform", "scale(0.95)");
+		@include vendor("filter", "blur(0.1rem)");
+		opacity: 0;
+	}
+
+	.body.is-loading & {
+		opacity: 0;
+	}
+}
