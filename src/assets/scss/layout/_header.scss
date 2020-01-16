@@ -276,8 +276,6 @@
 		@include breakpoint(xxsmall) {
 			padding-bottom: 2.8rem;
 			> * {
-				margin-top: 2rem;
-
 				&:before {
 					top: calc(-2rem - 1px);
 					height: calc(2rem + 1px);
