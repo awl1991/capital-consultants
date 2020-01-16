@@ -9,7 +9,7 @@ const logoSlide = {
 
 	after: {
 		display: "inline-block",
-		marginTop: "0px",
+		marginTop: "-10px",
 		transition: {
 			delay: 0.5,
 			duration: 1,
