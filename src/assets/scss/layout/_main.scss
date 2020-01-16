@@ -22,23 +22,6 @@ html {
 	@include vendor("align-items", "center");
 	@include vendor("justify-content", "center");
 	@include vendor("flex-direction", "column");
-	-webkit-animation-name: active;
-	animation-duration: 0.5s;
-	@keyframes active {
-		0% {
-			transform: scaleY(0.25);
-		}
-		25% {
-			transform: scaleY(0.5);
-		}
-		50% {
-			transform: scaleY(0.75);
-		}
-		100% {
-			transform: scaleY(1);
-		}
-	}
-
 	backdrop-filter: blur(2px);
 	position: relative;
 	z-index: 3;
