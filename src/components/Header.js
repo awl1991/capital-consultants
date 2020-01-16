@@ -1,6 +1,7 @@
-import React from "react"
+import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import { motion } from "framer-motion"
+// import Div100vh from "react-div-100vh"
 
 import shadowLogo from "../images/mainlogo.svg"
 
@@ -18,6 +19,33 @@ const logoSlide = {
 		}
 	}
 }
+
+const navScale = {
+	before: { opacity: 1, scaleX: 0.5 },
+	after: {
+		opacity: 1,
+		scaleX: 1,
+		transformOrigin: "topcenter",
+		transition: {
+			delay: 0.1,
+			duration: 1,
+			when: "beforeChildren",
+			staggerChildren: 0.1
+		}
+	}
+}
+
+// const WrapperComponent = props => {
+// 	useEffect(() => {
+// 		window.onresize = function() {
+// 			document.body.height = window.innerHeight
+// 		}
+
+// 		window.onresize() // called to initially set the height.
+// 	}, [])
+
+// 	return props.children
+// }
 
 const Header = props => {
 	return (
@@ -40,7 +68,7 @@ const Header = props => {
 				</div>
 			</div>
 			<nav>
-				<ul>
+				<motion.ul variants={navScale} initial={"before"} animate={"after"}>
 					{/* eslint-disable */}
 					<li>
 						<a
@@ -83,7 +111,7 @@ const Header = props => {
 						</a>
 					</li>
 					{/* eslint-enable */}
-				</ul>
+				</motion.ul>
 			</nav>
 		</header>
 	)

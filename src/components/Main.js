@@ -19,7 +19,6 @@ const Main = props => {
 			id="main"
 			style={props.timeout ? { display: "flex" } : { display: "none" }}
 		>
-			<div id="topBorder"></div>
 			<article
 				id="about"
 				className={`${props.article === "about" ? "active" : ""} ${
@@ -280,7 +279,6 @@ const Main = props => {
 				</ul>
 				{close}
 			</article>
-			<div id="bottomBorder"></div>
 		</div>
 	)
 }
