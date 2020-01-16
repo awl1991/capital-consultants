@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { motion } from "framer-motion"
 // import Div100vh from "react-div-100vh"
@@ -34,18 +34,6 @@ const navScale = {
 		}
 	}
 }
-
-// const WrapperComponent = props => {
-// 	useEffect(() => {
-// 		window.onresize = function() {
-// 			document.body.height = window.innerHeight
-// 		}
-
-// 		window.onresize() // called to initially set the height.
-// 	}, [])
-
-// 	return props.children
-// }
 
 const Header = props => {
 	return (
@@ -122,57 +110,3 @@ Header.propTypes = {
 	timeout: PropTypes.bool
 }
 export default Header
-
-// const containerVariants = {
-// 	before: {},
-// 	after: { transition: { staggerChildren: 0.03 } }
-// }
-// const letterVariants = {
-// 	before: {
-// 		opacity: 0,
-// 		fontSize: "1.5rem",
-// 		y: 0,
-// 		transition: {
-// 			type: "spring",
-// 			ease: "easeOut",
-// 			damping: 40,
-// 			stiffness: 100
-// 		}
-// 	},
-// 	after: {
-// 		opacity: 1,
-// 		fontSize: "0.8rem",
-// 		y: 0,
-// 		transition: {
-// 			type: "spring",
-// 			ease: "easeOut",
-// 			damping: 40,
-// 			stiffness: 100
-// 		}
-// 	}
-// }
-// const string = Array.from("Large Loss Consulting Agency")
-// <motion.p
-// 						variants={containerVariants}
-// 						initial={"before"}
-// 						animate={"after"}
-// 						width={"100%"}
-// 						height={20}
-// 						background={""}
-// 						style={{
-// 							display: "flex",
-// 							justifyContent: "center"
-// 						}}
-// 					>
-// 						{string.map((letter, index) => (
-// 							<motion.span
-// 								key={index}
-// 								variants={letterVariants}
-// 								width={"auto"}
-// 								height={20}
-// 								style={{ position: "relative" }}
-// 							>
-// 								{letter === " " ? "\u00A0" : letter}
-// 							</motion.span>
-// 						))}
-// 					</motion.p>
