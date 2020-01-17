@@ -1,8 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { motion } from "framer-motion"
-import shadowLogo from "../images/mainlogo.svg"
 import fallbackLogo from "../images/logo.png"
+import mainLogo from "../svg/mainlogo.svg"
 
 const navScale = {
 	before: { opacity: 1, scaleX: 0.5 },
@@ -23,13 +23,8 @@ const Header = props => {
 	return (
 		<header id="header" style={props.timeout ? { display: "none" } : {}}>
 			<div className="logo">
-				<object
-					type="image/svg+xml"
-					className="capLogo"
-					data={shadowLogo}
-					alt="Capital Consultants"
-				>
-					<img className="capLogo" src={fallbackLogo} />
+				<object data={mainLogo} type="image/svg+xml" class="mainLogo">
+					<img class="mainLogo" src={fallbackLogo} alt="Capital Consultants" />
 				</object>
 			</div>
 			<div className="content">

@@ -30,6 +30,7 @@ $ipad: "all and (min-device-width: 481px) and (max-device-width: 1024px) and (or
 		color: _palette(fg-sub);
 		@include breakpoint(xsmall) {
 			font-size: 0.5rem;
+			margin-top: 2rem;
 		}
 		@media #{$ipad} {
 			font-size: 0.6rem;
