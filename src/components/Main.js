@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
-import pic01 from "../images/pic01.png"
+import pic01 from "../svg/CommercialPerils.svg"
+import pic01Fallback from "../images/CommercialPerils.png"
 import pic02 from "../images/pic02.png"
 import pic03 from "../images/pic03.png"
 
@@ -28,7 +29,9 @@ const Main = props => {
 			>
 				<h3 className="major">About</h3>
 				<span className="image main">
-					<img src={pic01} alt="" />
+					<object data={pic01} type="image/svg+xml" class="commercialPerils">
+						<img src={pic01Fallback} alt="Commercial Perils" class="perils" />
+					</object>
 				</span>
 				<p>
 					<b>
