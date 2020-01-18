@@ -29,8 +29,8 @@ const Main = props => {
 			>
 				<h3 className="major">About</h3>
 				<span className="image main">
-					<object data={pic01} type="image/svg+xml" class="commercialPerils">
-						<img src={pic01Fallback} alt="Commercial Perils" class="perils" />
+					<object data={pic01} type="image/svg+xml">
+						<img src={pic01Fallback} alt="Commercial Perils" />
 					</object>
 				</span>
 				<p>
