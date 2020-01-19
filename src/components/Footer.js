@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import bwlogo from "../images/footer_icon.svg"
+import bwlogo from "../svg/footer_icon.svg"
 
 const bwlogoStyle = {
 	height: ".5rem",
