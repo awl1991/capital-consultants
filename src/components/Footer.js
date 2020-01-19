@@ -5,7 +5,8 @@ import bwlogo from "../svg/footer_icon.svg"
 const bwlogoStyle = {
 	height: ".5rem",
 	marginRight: "3px",
-	marginBottom: "-.7px"
+	marginBottom: "-.7px",
+	opacity: ".5"
 }
 
 const Footer = props => (

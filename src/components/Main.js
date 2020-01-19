@@ -3,7 +3,8 @@ import React from "react"
 import { motion } from "framer-motion"
 import pic01 from "../svg/CommercialPerils.svg"
 import pic01Fallback from "../images/CommercialPerils.png"
-import pic02 from "../images/pic02.png"
+import pic02 from "../svg/WhyPage.svg"
+import pic02Fallback from "../images/WhyPage.png"
 import pic03 from "../images/pic03.png"
 
 const animationDelay = {
@@ -92,7 +93,15 @@ const Main = props => {
 			>
 				<h3 className="major">Why hire a consultant?</h3>
 				<span className="image main">
-					<img src={pic02} alt="" />
+					<motion.object
+						variants={animationDelay}
+						initial={"before"}
+						animate={"after"}
+						data={pic02}
+						type="image/svg+xml"
+					>
+						<img src={pic02Fallback} alt="Commercial Perils" />
+					</motion.object>
 				</span>
 				<p>
 					<b>Filing an insurance claim can seem daunting</b> depending on the
