@@ -38,7 +38,11 @@ const Header = props => {
 					type="image/svg+xml"
 					class="mainLogo"
 				>
-					<img class="mainLogo" src={fallbackLogo} alt="Capital Consultants" />
+					<img
+						className="mainLogo"
+						src={fallbackLogo}
+						alt="Capital Consultants"
+					/>
 				</motion.object>
 			</div>
 			<div className="content">
