@@ -11,11 +11,9 @@ const navScale = {
 		scaleX: 1,
 		transformOrigin: "topcenter",
 		transition: {
-			delay: 0.5,
-			type: "spring",
-			mass: 0.5,
-			stiffness: 250,
-			bounceDamping: 20
+			delay: 0.2,
+			duration: 1,
+			easing: "ease"
 		}
 	}
 }
