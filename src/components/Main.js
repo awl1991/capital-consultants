@@ -248,6 +248,7 @@ const Main = props => {
 				}`}
 				style={{ display: "none" }}
 			>
+				{close}
 				<h3 className="major">Contact</h3>
 				<form
 					subject={"New Website Submission"}
@@ -295,7 +296,6 @@ const Main = props => {
 						</a>
 					</li>
 				</ul>
-				{close}
 			</article>
 		</div>
 	)

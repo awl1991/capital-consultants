@@ -31,7 +31,6 @@ html {
 		@include padding(2.5rem, 2.5rem, (2rem, 0, 1rem, 0));
 		position: relative;
 		width: 50rem;
-		// max-height: 90vh;
 		background-color: transparentize(_palette(bg), 0.15);
 		border-radius: 0;
 		opacity: 1;
@@ -87,7 +86,6 @@ html {
 				background-size: 20px 20px;
 				background-repeat: no-repeat;
 			}
-
 			&:hover {
 				&:before {
 					background-color: _palette(border-bg);
