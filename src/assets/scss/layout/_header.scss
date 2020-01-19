@@ -18,7 +18,6 @@
 		@include vendor("transition", "opacity #{_duration(article)} ease-in-out");
 		position: relative;
 		margin-top: 3rem;
-
 		&:before {
 			content: "";
 			display: block;
@@ -26,8 +25,8 @@
 			top: calc(-3rem - 1px);
 			left: calc(50% - #{_size(border-width) * 1});
 			width: _size(border-width);
-			height: calc(3rem + 1px);
 			background: _palette(border);
+			height: calc(3rem + 1px);
 		}
 	}
 
@@ -96,7 +95,8 @@
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
-			border: solid _size(border-width) _palette(border);
+			border: solid _palette(border);
+			border-width: _size(border-width);
 			border-radius: _size(border-radius);
 
 			li {

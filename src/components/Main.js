@@ -1,9 +1,18 @@
 import PropTypes from "prop-types"
 import React from "react"
+import { motion } from "framer-motion"
 import pic01 from "../svg/CommercialPerils.svg"
 import pic01Fallback from "../images/CommercialPerils.png"
 import pic02 from "../images/pic02.png"
 import pic03 from "../images/pic03.png"
+
+const animationDelay = {
+	before: { display: "none" },
+	after: {
+		display: "inline-block",
+		transition: { delay: 1 }
+	}
+}
 
 const Main = props => {
 	let close = (
@@ -29,9 +38,15 @@ const Main = props => {
 			>
 				<h3 className="major">About</h3>
 				<span className="image main">
-					<object data={pic01} type="image/svg+xml">
+					<motion.object
+						variants={animationDelay}
+						initial={"before"}
+						animate={"after"}
+						data={pic01}
+						type="image/svg+xml"
+					>
 						<img src={pic01Fallback} alt="Commercial Perils" />
-					</object>
+					</motion.object>
 				</span>
 				<p>
 					<b>
