@@ -16,22 +16,6 @@ const animationDelay1 = {
 	}
 }
 
-const animationDelay2 = {
-	before: { display: "none !important" },
-	after: {
-		display: "block !important",
-		transition: { delay: 2 }
-	}
-}
-
-const animationDelay3 = {
-	before: { display: "none !important" },
-	after: {
-		display: "block !important",
-		transition: { delay: 3 }
-	}
-}
-
 const Main = props => {
 	let close = (
 		<div
@@ -56,15 +40,9 @@ const Main = props => {
 			>
 				<h3 className="major">About</h3>
 				<span className="image main">
-					<motion.object
-						variants={animationDelay1}
-						initial={"before"}
-						animate={"after"}
-						data={pic01}
-						type="image/svg+xml"
-					>
+					<object data={pic01} type="image/svg+xml">
 						<img src={pic01Fallback} alt="Commercial Perils" />
-					</motion.object>
+					</object>
 				</span>
 				<p>
 					<b>
@@ -110,15 +88,9 @@ const Main = props => {
 			>
 				<h3 className="major">Why hire a consultant?</h3>
 				<span className="image main">
-					<motion.object
-						data={pic02}
-						variants={animationDelay2}
-						initial={"before"}
-						animate={"after"}
-						type="image/svg+xml"
-					>
+					<object data={pic02} type="image/svg+xml">
 						<img src={pic02Fallback} alt="Residential Perils" />
-					</motion.object>
+					</object>
 				</span>
 				<p>
 					<b>Filing an insurance claim can seem daunting</b> depending on the
@@ -184,15 +156,9 @@ const Main = props => {
 			>
 				<h3 className="major">Services</h3>
 				<span className="image main">
-					<motion.object
-						data={pic03}
-						variants={animationDelay3}
-						initial={"before"}
-						animate={"after"}
-						type="image/svg+xml"
-					>
+					<object data={pic03} type="image/svg+xml">
 						<img src={pic03Fallback} alt="Capital Consultants Services" />
-					</motion.object>
+					</object>
 				</span>
 				<ul>
 					<li>
