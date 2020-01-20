@@ -7,7 +7,15 @@ import pic02 from "../svg/WhyPage.svg"
 import pic02Fallback from "../images/WhyPage.png"
 import pic03 from "../images/pic03.png"
 
-const animationDelay = {
+const animationDelay1 = {
+	before: { display: "none" },
+	after: {
+		display: "inline-block",
+		transition: { delay: 1 }
+	}
+}
+
+const animationDelay2 = {
 	before: { display: "none" },
 	after: {
 		display: "inline-block",
@@ -40,7 +48,7 @@ const Main = props => {
 				<h3 className="major">About</h3>
 				<span className="image main">
 					<motion.object
-						variants={animationDelay}
+						variants={animationDelay1}
 						initial={"before"}
 						animate={"after"}
 						data={pic01}
@@ -94,7 +102,7 @@ const Main = props => {
 				<h3 className="major">Why hire a consultant?</h3>
 				<span className="image main">
 					<motion.object
-						variants={animationDelay}
+						variants={animationDelay2}
 						initial={"before"}
 						animate={"after"}
 						data={pic02}
