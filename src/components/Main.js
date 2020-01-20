@@ -12,7 +12,7 @@ const animationDelay1 = {
 	before: { display: "none !important" },
 	after: {
 		display: "block",
-		transition: { delay: 2 }
+		transition: { delay: 1 }
 	}
 }
 
@@ -21,6 +21,14 @@ const animationDelay2 = {
 	after: {
 		display: "block !important",
 		transition: { delay: 2 }
+	}
+}
+
+const animationDelay3 = {
+	before: { display: "none !important" },
+	after: {
+		display: "block !important",
+		transition: { delay: 3 }
 	}
 }
 
@@ -178,7 +186,7 @@ const Main = props => {
 				<span className="image main">
 					<motion.object
 						data={pic03}
-						variants={animationDelay2}
+						variants={animationDelay3}
 						initial={"before"}
 						animate={"after"}
 						type="image/svg+xml"
