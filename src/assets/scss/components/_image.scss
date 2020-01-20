@@ -55,13 +55,6 @@
 		}
 	}
 
-	&.services {
-		display: block;
-		margin: (_size(element-margin) * 1.25) 0;
-		width: 100%;
-		padding: 25px 25px 15px 25px;
-	}
-
 	@include breakpoint(small) {
 		&.main {
 			margin: (_size(element-margin) * 1) 0;

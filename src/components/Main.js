@@ -175,7 +175,7 @@ const Main = props => {
 				style={{ display: "none" }}
 			>
 				<h3 className="major">Services</h3>
-				<span className="image services">
+				<span className="image main">
 					<motion.object
 						data={pic03}
 						variants={animationDelay2}
