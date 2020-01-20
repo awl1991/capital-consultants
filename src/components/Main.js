@@ -5,21 +5,22 @@ import pic01 from "../svg/CommercialPerils.svg"
 import pic01Fallback from "../images/CommercialPerils.png"
 import pic02 from "../svg/WhyPage.svg"
 import pic02Fallback from "../images/WhyPage.png"
-import pic03 from "../images/pic03.png"
+import pic03 from "../svg/ServicesPage.svg"
+import pic03Fallback from "../images/ServicesPage.png"
 
 const animationDelay1 = {
-	before: { display: "none" },
+	before: { display: "none !important" },
 	after: {
-		display: "inline-block",
-		transition: { delay: 1 }
+		display: "block",
+		transition: { delay: 2 }
 	}
 }
 
 const animationDelay2 = {
-	before: { display: "none" },
+	before: { display: "none !important" },
 	after: {
-		display: "inline-block",
-		transition: { delay: 1 }
+		display: "block !important",
+		transition: { delay: 2 }
 	}
 }
 
@@ -102,13 +103,13 @@ const Main = props => {
 				<h3 className="major">Why hire a consultant?</h3>
 				<span className="image main">
 					<motion.object
+						data={pic02}
 						variants={animationDelay2}
 						initial={"before"}
 						animate={"after"}
-						data={pic02}
 						type="image/svg+xml"
 					>
-						<img src={pic02Fallback} alt="Commercial Perils" />
+						<img src={pic02Fallback} alt="Residential Perils" />
 					</motion.object>
 				</span>
 				<p>
@@ -174,8 +175,16 @@ const Main = props => {
 				style={{ display: "none" }}
 			>
 				<h3 className="major">Services</h3>
-				<span className="image main">
-					<img src={pic03} alt="" />
+				<span className="image services">
+					<motion.object
+						data={pic03}
+						variants={animationDelay2}
+						initial={"before"}
+						animate={"after"}
+						type="image/svg+xml"
+					>
+						<img src={pic03Fallback} alt="Capital Consultants Services" />
+					</motion.object>
 				</span>
 				<ul>
 					<li>
@@ -320,6 +329,7 @@ const Main = props => {
 
 Main.propTypes = {
 	route: PropTypes.object,
+	animation: PropTypes.string,
 	article: PropTypes.string,
 	articleTimeout: PropTypes.bool,
 	onCloseArticle: PropTypes.func,
