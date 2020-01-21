@@ -5,10 +5,12 @@ $misc: (
 
 // Duration.
 $duration: (
-	transition: 0.5s,
+	transition: 0.7s,
 	bg: 1.5s,
 	intro: 1s,
-	article: 0.4s
+	article: 0.5s,
+	filter: 1.5s,
+	intro-filter: 1.5s
 );
 
 // Size.
@@ -42,9 +44,9 @@ $palette: (
 	bg-overlay: rgb(0, 0, 0),
 	fg: rgba(242, 242, 247, 0.5),
 	fg-sub: rgba(242, 242, 247, 0.25),
-	fg-bold: #979797,
+	fg-bold: #868585,
 	fg-light: rgba(255, 255, 255, 0.5),
-	border: rgba(242, 242, 247, 0.6),
-	border-bg: rgba(242, 242, 247, 0.068),
+	border: rgba(166, 166, 168, 0.685),
+	border-bg: #78909c27,
 	border-bg-alt: rgba(255, 255, 255, 0.175)
 );

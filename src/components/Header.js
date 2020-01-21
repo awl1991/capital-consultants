@@ -55,44 +55,40 @@ const Header = props => {
 				<motion.ul variants={navScale} initial={"before"} animate={"after"}>
 					{/* eslint-disable */}
 					<li>
-						<a
-							href="javascript:;"
+						<button
 							onClick={() => {
 								props.onOpenArticle("about")
 							}}
 						>
 							About
-						</a>
+						</button>
 					</li>
 					<li>
-						<a
-							href="javascript:;"
+						<button
 							onClick={() => {
-								props.onOpenArticle("work")
+								props.onOpenArticle("why")
 							}}
 						>
 							Why?
-						</a>
+						</button>
 					</li>
 					<li>
-						<a
-							href="javascript:;"
+						<button
 							onClick={() => {
-								props.onOpenArticle("intro")
+								props.onOpenArticle("services")
 							}}
 						>
-							Services
-						</a>
+							Services{" "}
+						</button>
 					</li>
 					<li>
-						<a
-							href="javascript:;"
+						<button
 							onClick={() => {
 								props.onOpenArticle("contact")
 							}}
 						>
 							Contact
-						</a>
+						</button>
 					</li>
 					{/* eslint-enable */}
 				</motion.ul>
