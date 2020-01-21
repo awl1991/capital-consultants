@@ -1,6 +1,6 @@
 #bg {
 	@include vendor("transform", "scale(1.0)");
-	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -110,7 +110,7 @@
 
 #bgtop {
 	@include vendor("transform", "scale(1)");
-	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	position: fixed;
 	bottom: 0;
 	right: 0;
