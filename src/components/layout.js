@@ -41,16 +41,15 @@ const Layout = ({ children, location }) => {
 								content: data.site.siteMetadata.description
 							}
 						]}
-					>
-						<html lang="en" />
-						link=
-						{[
+						link={[
 							{
 								rel: "Capital Consultants Logo",
 								type: "image/png",
 								href: `${favicon}`
 							}
 						]}
+					>
+						<html lang="en" />
 					</Helmet>
 					{content}
 				</>
