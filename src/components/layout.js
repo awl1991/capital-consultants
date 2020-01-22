@@ -40,7 +40,7 @@ const Layout = ({ children, location }) => {
 								name: "description",
 								content: data.site.siteMetadata.description
 							},
-							{ name: "image", content: data.site.siteMetadata.imag }
+							{ name: "image", content: data.site.siteMetadata.image }
 						]}
 					>
 						<html lang="en" />
