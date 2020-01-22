@@ -41,9 +41,7 @@ const Layout = ({ children, location }) => {
 							{
 								name: "description",
 								content: data.site.siteMetadata.description
-							}
-						]}
-						link={[
+							},
 							{
 								rel: "icon",
 								type: "image/png",
