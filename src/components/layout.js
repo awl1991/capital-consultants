@@ -2,7 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
-import favicon from "../images/favicon.png"
+import favicon16 from "../images/favicon/favicon16.png"
+import favicon32 from "../images/favicon/favicon32.png"
+import favicon64 from "../images/favicon/favicon64.png"
 
 import "../assets/scss/main.scss"
 
@@ -45,8 +47,16 @@ const Layout = ({ children, location }) => {
 							{
 								rel: "icon",
 								type: "image/png",
-								href: `${favicon}`
-							}
+								sizes: "16x16",
+								href: `${favicon16}`
+							},
+							{
+								rel: "icon",
+								type: "image/png",
+								sizes: "32x32",
+								href: `${favicon32}`
+							},
+							{ rel: "shortcut icon", type: "image/png", href: `${favicon64}` }
 						]}
 					>
 						<html lang="en" />
