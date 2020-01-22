@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { motion } from "framer-motion"
-import fallbackLogo from "../images/logo.png"
+import fallbackLogo from "../images/fallbacks/fallbackLogo.png"
 import mainlogo from "../svg/mainlogo.svg"
 
 const navScale = {

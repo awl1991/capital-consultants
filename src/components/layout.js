@@ -1,10 +1,7 @@
-import React from "react"
+import React, { Fragment } from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
-import favicon16 from "../images/favicon/favicon16.png"
-import favicon32 from "../images/favicon/favicon32.png"
-import favicon64 from "../images/favicon/favicon64.png"
 
 import "../assets/scss/main.scss"
 
@@ -29,12 +26,13 @@ const Layout = ({ children, location }) => {
 						siteMetadata {
 							title
 							description
+							banner
 						}
 					}
 				}
 			`}
 			render={data => (
-				<>
+				<Fragment>
 					<Helmet
 						title={data.site.siteMetadata.title}
 						meta={[
@@ -45,22 +43,14 @@ const Layout = ({ children, location }) => {
 							{
 								rel: "icon",
 								type: "image/png",
-								sizes: "16x16",
-								href: `${favicon16}`
-							},
-							{
-								rel: "icon",
-								type: "image/png",
-								sizes: "32x32",
-								href: `${favicon32}`
-							},
-							{ rel: "shortcut icon", type: "image/png", href: `${favicon64}` }
+								href: `${data.site.siteMetadata.banner}`
+							}
 						]}
 					>
 						<html lang="en" />
 					</Helmet>
 					{content}
-				</>
+				</Fragment>
 			)}
 		/>
 	)

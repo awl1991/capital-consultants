@@ -1,14 +1,14 @@
 import PropTypes from "prop-types"
 import React from "react"
 // About page svg animation & fallback png
-import svg_pic_1 from "../svg/CommercialPerils.svg"
-import png_alt_1 from "../images/CommercialPerils.png"
+import svg_pic_1 from "../svg/AboutPage.svg"
+import png_alt_1 from "../images/fallbacks/aboutPage.png"
 // Why page svg animation & fallback png
 import svg_pic_2 from "../svg/WhyPage.svg"
-import png_alt_2 from "../images/WhyPage.png"
+import png_alt_2 from "../images/fallbacks/WhyPage.png"
 // Services page svg animation & fallback png
 import svg_pic_3 from "../svg/ServicesPage.svg"
-import png_alt_3 from "../images/ServicesPage.png"
+import png_alt_3 from "../images/fallbacks/servicesPage.png"
 
 class Main extends React.Component {
 	render() {
