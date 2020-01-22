@@ -43,7 +43,6 @@ const Layout = ({ children, location }) => {
 						]}
 					>
 						<html lang="en" />
-						<meta name="image" content={favicon} />
 					</Helmet>
 					{content}
 				</>
