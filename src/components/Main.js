@@ -5,7 +5,7 @@ import svg_pic_1 from "../svg/AboutPage.svg"
 import png_alt_1 from "../images/fallbacks/aboutPage.png"
 // Why page svg animation & fallback png
 import svg_pic_2 from "../svg/WhyPage.svg"
-import png_alt_2 from "../images/fallbacks/WhyPage.png"
+import png_alt_2 from "../images/fallbacks/whyPage.png"
 // Services page svg animation & fallback png
 import svg_pic_3 from "../svg/ServicesPage.svg"
 import png_alt_3 from "../images/fallbacks/servicesPage.png"
