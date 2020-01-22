@@ -43,7 +43,7 @@ const Layout = ({ children, location }) => {
 						]}
 						link={[
 							{
-								rel: "Capital Consultants Logo",
+								rel: "icon",
 								type: "image/png",
 								href: `${favicon}`
 							}
