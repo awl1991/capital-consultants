@@ -2,7 +2,7 @@ module.exports = {
 	siteMetadata: {
 		title: "Capital Consultants",
 		description: "Large Loss Consulting Agency",
-		siteUrl: "www.thecapitalconsultants.com",
+		siteUrl: "https://www.thecapitalconsultants.com",
 		social: [
 			{
 				name: "facebook",
