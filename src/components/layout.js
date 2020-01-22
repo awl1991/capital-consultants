@@ -34,19 +34,14 @@ const Layout = ({ children, location }) => {
 			render={data => (
 				<>
 					<Helmet
-						image={data.site.siteMetadata.image}
 						title={data.site.siteMetadata.title}
-						description={data.site.siteMetadata.description}
-						meta={
-							/*[
-
-								name: data.site.siteMetadata.description,
-								description:data.site.siteMetadata.description,
-								image: data.site.siteMetadata.imag,
+						meta={[
+							{
+								name: "description",
+								content: data.site.siteMetadata.description
 							},
-							{ //name: "keywords", content: "sample, something" }
-						]*/
-						}
+							{ name: "image", content: data.site.siteMetadata.imag }
+						]}
 					>
 						<html lang="en" />
 					</Helmet>
@@ -60,5 +55,7 @@ const Layout = ({ children, location }) => {
 Layout.propTypes = {
 	children: PropTypes.node.isRequired
 }
+
+// { name: "keywords", content: "sample, something" }
 
 export default Layout
