@@ -48,7 +48,6 @@ class Main extends React.Component {
 							insurance claim. We also offer assistance with denied and/or old
 							claims (filed within the previous two years).
 						</b>{" "}
-						<a href="#services">awesome work</a>
 						We provide advice as to the quality of the claim, as well as
 						assistance with selecting the most qualified experts who will
 						provide you with the highest likelihood of achieving a desirable
