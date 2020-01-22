@@ -16,7 +16,7 @@ module.exports = {
 			options: {
 				name: `capital-consultants`,
 				start_url: `/`,
-				display: `standalone`,
+				display: `minimal-ui`,
 				icon: `src/images/icon.png`
 			}
 		},
