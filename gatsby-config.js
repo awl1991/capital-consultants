@@ -10,17 +10,5 @@ module.exports = {
 			}
 		]
 	},
-	plugins: [
-		{
-			resolve: `gatsby-plugin-manifest`,
-			options: {
-				name: `capital-consultants`,
-				start_url: `/`,
-				display: `minimal-ui`,
-				icon: `src/images/icon.png`
-			}
-		},
-		"gatsby-plugin-sass",
-		"gatsby-plugin-offline"
-	]
+	plugins: ["gatsby-plugin-sass", "gatsby-plugin-offline"]
 }

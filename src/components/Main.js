@@ -15,12 +15,12 @@ class Main extends React.Component {
 		const props = this.props
 
 		let close = (
-			<div
+			<button
 				className="close"
 				onClick={() => {
 					props.onCloseArticle()
 				}}
-			></div>
+			></button>
 		)
 		return (
 			<div

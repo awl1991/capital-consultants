@@ -1,8 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
-import favicon from "../images/logo.png"
 import { StaticQuery, graphql } from "gatsby"
+import favicon from "../images/logo.png"
 
 import "../assets/scss/main.scss"
 
@@ -43,6 +43,14 @@ const Layout = ({ children, location }) => {
 						]}
 					>
 						<html lang="en" />
+						link=
+						{[
+							{
+								rel: "Capital Consultants Logo",
+								type: "image/png",
+								href: `${favicon}`
+							}
+						]}
 					</Helmet>
 					{content}
 				</>
