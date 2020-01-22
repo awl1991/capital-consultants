@@ -1,8 +1,8 @@
 module.exports = {
 	siteMetadata: {
 		title: "Capital Consultants",
-		author: "Andrew Labunski",
 		description: "Large Loss Consulting Agency",
+		image: "src/images/logo.png",
 		siteUrl: "https://www.thecapitalconsultants.com/",
 		social: [
 			{
