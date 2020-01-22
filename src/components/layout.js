@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
+import favicon from "../images/logo.png"
 import { StaticQuery, graphql } from "gatsby"
 
 import "../assets/scss/main.scss"
@@ -26,7 +27,6 @@ const Layout = ({ children, location }) => {
 						siteMetadata {
 							title
 							description
-							image
 						}
 					}
 				}
@@ -39,11 +39,11 @@ const Layout = ({ children, location }) => {
 							{
 								name: "description",
 								content: data.site.siteMetadata.description
-							},
-							{ name: "image", content: data.site.siteMetadata.image }
+							}
 						]}
 					>
 						<html lang="en" />
+						<meta name="image" content={favicon} />
 					</Helmet>
 					{content}
 				</>
