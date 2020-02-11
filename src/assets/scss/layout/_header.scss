@@ -23,7 +23,7 @@
 			display: block;
 			position: absolute;
 			top: calc(-3rem - 1px);
-			left: calc(50% - #{_size(border-width) * 1});
+			left: calc(50% - #{_size(border-width) * 3});
 			width: _size(border-width);
 			background: _palette(border);
 			height: calc(3rem + 1px);
@@ -180,58 +180,56 @@
 	}
 
 	@include breakpoint(medium) {
-		.content {
-			p {
-				br {
-					display: none;
-				}
-			}
-		}
-	}
-
-	@include breakpoint(small) {
 		> * {
-			margin-top: 2rem;
-
 			&:before {
-				top: calc(-2rem - 1px);
-				height: calc(2rem + 1px);
+				left: calc(50% - 3px);
 			}
 		}
 
-		.logo {
-			width: 12rem;
-			height: 12rem;
-			line-height: 4.75rem;
-			padding-top: 17px;
+		@include breakpoint(small) {
+			> * {
+				margin-top: 2rem;
 
-			.icon {
 				&:before {
-					font-size: 1.75rem;
+					top: calc(-2rem - 1px);
+					height: calc(2rem + 1px);
+				}
+			}
+
+			.logo {
+				width: 12rem;
+				height: 12rem;
+				line-height: 4.75rem;
+				padding-top: 17px;
+
+				.icon {
+					&:before {
+						font-size: 1.75rem;
+					}
+				}
+			}
+
+			.content {
+				.inner {
+					padding: 5rem 1rem;
+					margin-top: 0rem;
+				}
+
+				p {
+					line-height: 1.875;
 				}
 			}
 		}
 
-		.content {
-			.inner {
-				padding: 5rem 1rem;
-				margin-top: 0rem;
-			}
+		@include breakpoint(xsmall) {
+			padding-bottom: 2.5rem;
+			> * {
+				margin-top: 2rem;
 
-			p {
-				line-height: 1.875;
-			}
-		}
-	}
-
-	@include breakpoint(xsmall) {
-		padding-bottom: 2.5rem;
-		> * {
-			margin-top: 2rem;
-
-			&:before {
-				top: calc(-2rem - 1px);
-				height: calc(2rem + 1px);
+				&:before {
+					top: calc(-2rem - 1px);
+					height: calc(2rem + 1px);
+				}
 			}
 		}
 
