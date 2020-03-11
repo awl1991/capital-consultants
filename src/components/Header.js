@@ -11,8 +11,8 @@ const navScale = {
 		scaleX: 1,
 		transformOrigin: "topcenter",
 		transition: {
-			delay: 0.2,
-			duration: 1,
+			delay: 0,
+			duration: 0.75,
 			easing: "ease"
 		}
 	}
@@ -22,7 +22,7 @@ const logoDelay = {
 	before: { display: "none" },
 	after: {
 		display: "inline-block",
-		transition: { delay: 0.6 }
+		transition: { delay: 1 }
 	}
 }
 
