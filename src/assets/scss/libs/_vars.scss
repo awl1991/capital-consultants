@@ -1,52 +1,52 @@
 // Misc.
 $misc: (
-        z-index-base: 10000
+	z-index-base: 10000
 );
 
 // Duration.
 $duration: (
-        transition: 0.7s,
-        bg: 1.5s,
-        intro: 1s,
-        article: 0.5s,
-        filter: 1.5s,
-        intro-filter: 1.5s
+	transition: 0.7s,
+	bg: 1.5s,
+	intro: 1s,
+	article: 0.5s,
+	filter: 1.5s,
+	intro-filter: 1.5s
 );
 
 // Size.
 $size: (
-        border-radius: 4px,
-        border-width: 1px,
-        element-height: 2.75rem,
-        element-margin: 2rem
+	border-radius: 4px,
+	border-width: 1px,
+	element-height: 2.75rem,
+	element-margin: 2rem
 );
 
 // Font.
 $font: (
-        family: (
-                "Allerta Stencil",
-                sans-serif
-        ),
-        family-fixed: (
-                "Raleway",
-                sans-serif
-        ),
-        weight: 300,
-        weight-bold: 600,
-        letter-spacing: 0.16rem,
-        letter-spacing-heading: 1rem
+	family: (
+		"Allerta Stencil",
+		sans-serif
+	),
+	family-fixed: (
+		"Raleway",
+		sans-serif
+	),
+	weight: 300,
+	weight-bold: 600,
+	letter-spacing: 0.16rem,
+	letter-spacing-heading: 1rem
 );
 
 // Palette.
 $palette: (
-        bg: #000000,
-        bg-alt: #fff9f9,
-        bg-overlay: rgb(0, 0, 0),
-        fg: rgba(242, 242, 247, 0.5),
-        fg-sub: rgba(242, 242, 247, 0.25),
-        fg-bold: #868585,
-        fg-light: rgba(255, 255, 255, 0.5),
-        border: rgba(166, 166, 168, 0.685),
-        border-bg: #78909c27,
-        border-bg-alt: rgba(255, 255, 255, 0.175)
+	bg: #000000,
+	bg-alt: #fff9f9,
+	bg-overlay: rgb(0, 0, 0),
+	fg: rgba(242, 242, 247, 0.5),
+	fg-sub: rgba(242, 242, 247, 0.25),
+	fg-bold: #868585,
+	fg-light: rgba(255, 255, 255, 0.5),
+	border: rgba(166, 166, 168, 0.685),
+	border-bg: #78909c27,
+	border-bg-alt: rgba(255, 255, 255, 0.175)
 );

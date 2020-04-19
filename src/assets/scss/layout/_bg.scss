@@ -1,184 +1,180 @@
 #bg {
-  @include vendor("transform", "scale(.98)");
-  backface-visibility: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 1;
-  opacity: 1;
+	@include vendor("transform", "scale(.98)");
+	backface-visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 1;
+	opacity: 1;
 
-  &:before,
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+	&:before,
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 
-  &:before {
-    @include vendor(
-                    "transition",
-                    "background-color #{_duration(bg)} ease-in-out"
-    );
-    @include vendor("transition-delay", "#{_duration(intro)}");
+	&:before {
+		@include vendor(
+			"transition",
+			"background-color #{_duration(bg)} ease-in-out"
+		);
+		@include vendor("transition-delay", "#{_duration(intro)}");
 
-    z-index: 2;
-  }
+		z-index: 2;
+	}
 
-  &:after {
-    background-image: url("../../images/grid_bg.png");
-    background-size: 105%;
-    height: 80%;
-    opacity: 0.8;
-    z-index: 2;
-    filter: grayscale(100%);
-    @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-      background-position: top center;
-      opacity: 0.8;
-      background-repeat: repeat-x;
-      background-size: 50%;
-      height: 50vh;
-    }
+	&:after {
+		background-image: url("../../images/grid_bg.png");
+		background-size: 105%;
+		height: 80%;
+		opacity: 0.8;
+		z-index: 2;
+		filter: grayscale(100%);
+		@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+			background-position: top center;
+			opacity: 0.8;
+			background-repeat: repeat-x;
+			background-size: 50%;
+			height: 50vh;
+		}
 
-    @include breakpoint(medium) {
-      background-position: top center;
-      opacity: 0.8;
-      background-repeat: repeat-x;
-      background-size: 50%;
-      height: 88vh;
-    }
+		@include breakpoint(medium) {
+			background-position: top center;
+			opacity: 0.8;
+			background-repeat: repeat-x;
+			background-size: 50%;
+			height: 88vh;
+		}
 
-    @include breakpoint(xsmall) {
-      background-position: top center;
-      background-size: 80%;
-      opacity: 0.5;
-      height: 90vh;
-    }
-  }
+		@include breakpoint(xsmall) {
+			background-position: top center;
+			background-size: 80%;
+			opacity: 0.5;
+			height: 90vh;
+		}
+	}
 
-  &:after {
-    @include vendor("transform", "scale(1)");
+	&:after {
+		@include vendor("transform", "scale(1)");
 
-    @include vendor(
-                    "transition",
-                            (
-                                    "transform #{_duration(article)} ease-in",
-                                    "filter #{_duration(article)} ease-in"
-                            )
-    );
-  }
+		@include vendor(
+			"transition",
+			(
+				"transform #{_duration(article)} ease-in",
+				"filter #{_duration(article)} ease-in"
+			)
+		);
+	}
 
-  .body.is-article-visible & {
-    &:after {
-      @include vendor("transform", "scale(1)");
-      @include vendor("filter", "blur(0.1rem)");
-    }
-  }
+	.body.is-article-visible & {
+		&:after {
+			@include vendor("transform", "scale(1)");
+			@include vendor("filter", "blur(0.1rem)");
+		}
+	}
 
-  .body.is-loading & {
-    &:before {
-      background-color: rgb(43, 63, 71);
-    }
-  }
+	.body.is-loading & {
+		&:before {
+			background-color: rgb(43, 63, 71);
+		}
+	}
 }
 
 #bgtoverlay {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  opacity: 1;
-  background-color: rgba(3, 3, 3, 0.85);
-  z-index: 2;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+	opacity: 1;
+	background-color: rgba(3, 3, 3, 0.85);
+	z-index: 2;
 }
 
 #bgtop {
-  @include vendor("transform", "scale(1)");
-  backface-visibility: hidden;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 90vh;
-  opacity: 1;
-  z-index: 1;
+	@include vendor("transform", "scale(1)");
+	backface-visibility: hidden;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 90vh;
+	opacity: 1;
+	z-index: 1;
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	&:after {
+		filter: brightness(68%);
+		@include vendor(
+			"transition",
+			(
+				"transform #{_duration(article)} linear",
+				"filter #{_duration(article)} linear"
+			)
+		);
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 85vh;
+		opacity: 0.9;
+		background-image: url("../../images/bg.png");
+		background-position: bottom center;
+		background-size: 900px 485px;
+		background-repeat: repeat-x;
+		z-index: 1;
 
-  &:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+		@media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+			background-position: bottom center;
+			opacity: 0.8;
+			background-repeat: no-repeat;
+			background-size: 115%;
+			height: 88vh;
+		}
 
-  &:after {
-    filter: brightness(68%);
-    @include vendor(
-                    "transition",
-                            (
-                                    "transform #{_duration(article)} linear",
-                                    "filter #{_duration(article)} linear"
-                            )
-    );
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 85vh;
-    opacity: 0.9;
-    background-image: url("../../images/bg.png");
-    background-position: bottom center;
-    background-size: 900px 485px;
-    background-repeat: repeat-x;
-    z-index: 1;
+		@include breakpoint(medium) {
+			background-position: bottom center;
+			opacity: 0.8;
+			background-repeat: no-repeat;
+			background-size: 115%;
+			height: 88vh;
+		}
 
-    @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
-      background-position: bottom center;
-      opacity: 0.8;
-      background-repeat: no-repeat;
-      background-size: 115%;
-      height: 88vh;
-    }
+		@include breakpoint(xsmall) {
+			background-position: bottom center;
+			opacity: 0.4;
+			background-repeat: no-repeat;
+		}
+	}
+	&:after {
+		@include vendor("transform", "scale(1.1)");
+		@include vendor("transition", ("transform #{_duration(article)} linear"));
+	}
 
-    @include breakpoint(medium) {
-      background-position: bottom center;
-      opacity: 0.8;
-      background-repeat: no-repeat;
-      background-size: 115%;
-      height: 88vh;
-    }
+	.body.is-article-visible & {
+		opacity: 0.6;
+		&:after {
+			@include vendor("transform", "scale(1.2)");
+		}
+	}
 
-    @include breakpoint(xsmall) {
-      background-position: bottom center;
-      opacity: 0.4;
-      background-repeat: no-repeat;
-    }
-  }
-
-  &:after {
-    @include vendor("transform", "scale(1.1)");
-    @include vendor("transition", ("transform #{_duration(article)} linear"));
-  }
-
-  .body.is-article-visible & {
-    opacity: 0.6;
-
-    &:after {
-      @include vendor("transform", "scale(1.2)");
-    }
-  }
-
-  .body.is-loading & {
-    &:before {
-      background-color: rgba(8, 8, 8, 0.781);
-    }
-  }
+	.body.is-loading & {
+		&:before {
+			background-color: rgba(8, 8, 8, 0.781);
+		}
+	}
 }

@@ -1,73 +1,72 @@
 .image {
-  border-radius: _size(border-radius);
-  border: 0;
-  display: inline-block;
-  position: relative;
-  background-color: rgba(38, 47, 48, 0.432);
+	border-radius: _size(border-radius);
+	border: 0;
+	display: inline-block;
+	position: relative;
+	background-color: rgba(38, 47, 48, 0.432);
 
-  img {
-    border-radius: 0;
-    border-width: 0 0 0.1px 0;
-    padding: 0 8px 0 8px;
-    display: block;
-    opacity: 0.8;
-  }
+	img {
+		border-radius: 0;
+		border-width: 0 0 0.1px 0;
+		padding: 0 8px 0 8px;
+		display: block;
+		opacity: 0.8;
+	}
 
-  &.left,
-  &.right {
-    max-width: 40%;
+	&.left,
+	&.right {
+		max-width: 40%;
 
-    img {
-      width: 100%;
-    }
-  }
+		img {
+			width: 100%;
+		}
+	}
 
-  &.left {
-    float: left;
-    padding: 0 1.5em 1em 0;
-    top: 0.25em;
-  }
+	&.left {
+		float: left;
+		padding: 0 1.5em 1em 0;
+		top: 0.25em;
+	}
 
-  &.right {
-    float: right;
-    padding: 0 0 1em 1.5em;
-    top: 0.25em;
-  }
+	&.right {
+		float: right;
+		padding: 0 0 1em 1.5em;
+		top: 0.25em;
+	}
 
-  &.fit {
-    display: block;
-    margin: 0 0 _size(element-margin) 0;
-    width: 100%;
+	&.fit {
+		display: block;
+		margin: 0 0 _size(element-margin) 0;
+		width: 100%;
 
-    img {
-      width: 100%;
-    }
-  }
+		img {
+			width: 100%;
+		}
+	}
 
-  &.main {
-    display: block;
-    margin: (_size(element-margin) * 1.25) 0;
-    width: 100%;
-    padding: 15px 15px 5px 15px;
+	&.main {
+		display: block;
+		margin: (_size(element-margin) * 1.25) 0;
+		width: 100%;
+		padding: 15px 15px 5px 15px;
 
-    img {
-      width: 100%;
-    }
-  }
+		img {
+			width: 100%;
+		}
+	}
 
-  @include breakpoint(small) {
-    &.main {
-      margin: (_size(element-margin) * 1) 0;
-    }
-  }
+	@include breakpoint(small) {
+		&.main {
+			margin: (_size(element-margin) * 1) 0;
+		}
+	}
 
-  @include breakpoint(xsmall) {
-    &.main {
-      margin: (_size(element-margin) * 0.75) 0;
-
-      img {
-        width: 100%;
-      }
-    }
-  }
+	@include breakpoint(xsmall) {
+		&.main {
+			margin: (_size(element-margin) * 0.75) 0;
+			img {
+				width: 100%;
+			}
+		}
+	}
 }
